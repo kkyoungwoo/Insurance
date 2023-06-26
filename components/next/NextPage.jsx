@@ -3,13 +3,13 @@ import Button from "../button/Button";
 import BgDot from "../header/BgDot";
 
 const NextContent = {
-    title: "Would you like more i",
-    subtitle: `Don't be weird.ㅁ`,
-    buttonText: "Contact Us"
+    buttonText: "OUR WORKS"
 };
 
 const NextContent2 = {
-    buttonText: "Contact Us4"
+    title: "블루오션 영업크루 모집",
+    subtitle: `보험영업 경험자 우대`,
+    buttonText: "영업문의"
 };
 
 function NextPage({className, ...restProps}) {
@@ -23,16 +23,15 @@ function NextPage({className, ...restProps}) {
                 <div className="c-wrapper d-flex justify-content-between">
                     <div className="d-flex flex-column">
                         <p className="sub-heading line-shape line-shape-after ">
-                            <span className="line-bg-left">{NextContent.subtitle}</span>
+                            <span className="line-bg-left">{NextContent2.subtitle}</span>
                         </p>
                         <h2 className="section-title max-w750 mt-15">
-                            {NextContent.title}
+                            {NextContent2.title}
                         </h2>
                     </div>
-
                     <div className="button-box d-flex justify-content-end align-items-center">
                         <Button
-                            href={"/contact"}
+                            href={"/works"}
                             className="mr-15 line-head"
                             borderStyle={"border-color-heading-color"}
                             borderRadius
@@ -41,7 +40,7 @@ function NextPage({className, ...restProps}) {
                             {NextContent.buttonText}
                         </Button>
                         <Button
-                            href={"/works"}
+                            href={"/contact"}
                             className="mr-15 line-head"
                             borderStyle={"border-color-heading-color"}
                             borderRadius

@@ -10,6 +10,16 @@ const data = [
         category: ['induction'],
         description: 'Huggl is an induction charging.',
         overlay: 6
+    },
+    {
+        id: 2,
+        title: "Huggl Power Pack",
+        slug: 'huggl-power-pack',
+        src: '/img/project/project3/1.jpg',
+
+        category: ['induction'],
+        description: 'Huggl is an induction charging.',
+        overlay: 6
     }
 ]
 
@@ -20,7 +30,7 @@ export const getPortfolioItem = (value, whereName = "slug") => {
 };
 export const getPortfolioLink = (item) => {
     if (item)
-        return item.slug && '/portfolio/' + item.slug;
+        return item.slug && '/works/' + item.slug;
 
     return '';
 };

@@ -8,18 +8,19 @@ import FadeUpTrigger from "../../animation/FadeUpTrigger";
 
 
 const HeroContent = {
-    title: "Hello we, are <br/> Dsn Grid",
-    subtitle: `We’re a creative agency with an expertise in make custom websites.`,
-    description: `Founded in 2000, Dsn Grid has become one of the best Digital Agency in Themeforest. <span class="mb-10 d-block" ></span>
-     Blue money going forward, but deploy to production. First-order optimal strategies build on a culture of contribution and inclusion so those options`,
-    authorTitle: "SALVADOR DALI",
-    authorJob: "Digital Artisit",
-    experienceNumber: "25",
-    experienceDescription: `YEARS OF \nDIGITAL EXPERIENCE`,
+    title: "영업크루를 기다리고 있습니다",
+    subtitle: `워크비자는 외국인 관련 서비스를 운영하며 고객의 니즈를 고려한 다양한 수익구조를 가지고 있습니다 `,
+    description: `저출산 문제로 중소기업에 인력난 발생<span class="mb-10 d-block" ></span>
+    무료 외국인 구인구직으로 인력난 해결<span class="mb-10 d-block" ></span>
+    외국인 구인구직 업무를 통한 고소득 프리랜서 모집<span class="mb-10 d-block" ></span>`,
+    authorTitle: "제공되는 인프라",
+    authorJob: "DB, Semina, VOD, E-Book, On-boarding",
+    experienceNumber: "5",
+    experienceDescription: `인프라 제공`,
     heroImage: '/img/about-intro.jpg',
     awards: [
-        {number: 37, description: `Business <br/> partner`},
-        {number: 19, description: `SUTISFIED <br/> CUSTOMERS`},
+        {number: 3, description: `Week<br/>교육`},
+        {number: 6, description: `+ α<br/>수익구조`},
     ]
 };
 
@@ -80,7 +81,7 @@ function HeroSection({className, ...restProps}) {
                             className="box-awards-item p-absolute big-number v-dark-head left-0 bottom-0 ml-40 mb-40 z-index-1 border-style">
                             <h5 className="number p-20">
                                     <span className="has-animate-number title"
-                                          style={{fontSize: "110px", lineHeight: "120px"}}>
+                                          style={{fontSize: "145px", lineHeight: "120px"}}>
                                         {HeroContent.experienceNumber}
                                     </span>
                                 {HeroContent.experienceDescription && <span className="sm-title-block d-block" dangerouslySetInnerHTML={{__html : HeroContent.experienceDescription}} />}
