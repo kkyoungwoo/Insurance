@@ -1,7 +1,7 @@
 import { ElementType, HTMLProps, useEffect, useRef} from 'react';
 import {dsnCN, scrollTop} from "../hooks/helper";
 import dataAttr from "../hooks/dataAttr";
-import SocialOne from "../components/social/SocialOne";
+//import SocialOne from "../components/social/SocialOne";
 import MainScrollBar from "./MainScrollBar";
 import ModalRight from "../components/model-right/ModalRight.jsx";
 
@@ -73,7 +73,7 @@ function Layout({className, children, tag: Tag = "div", activeScrollbar, options
             </div>
 
             <div className="line-border-style w-100 h-100"/>
-            <SocialOne/>
+            {/*<SocialOne/>*/}
             <div className="dsn-paginate-right-page" ref={paginateRight}/>
             {modelRight && <ModalRight {...modelRight.propsModal}>{modelRight.children}</ModalRight>}
         </Tag>

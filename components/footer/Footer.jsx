@@ -13,7 +13,7 @@ function Footer({className}) {
                 <div className="footer-container">
                     <div className="d-flex align-items-center h-100">
                         <div className="column-left">
-                            <Social/>
+                            {/*<Social/>*/}
                         </div>
 
                         <ScrollToTop />

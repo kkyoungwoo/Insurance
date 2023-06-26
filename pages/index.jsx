@@ -33,7 +33,7 @@ function Home() {
     return (
         <Layout modelRight={{children: <ModalContact/>, propsModal: {textBtn: "Contact"}}}>
             <Head>
-                <title>Home | Eremia Creative Portfolio Multi-Purpose</title>
+                <title>workvisa | 영업사원 모집</title>
             </Head>
             <SliderPortfolio
                 webgel
