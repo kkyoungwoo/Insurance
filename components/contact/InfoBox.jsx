@@ -8,26 +8,21 @@ function InfoBox({className}) {
             <ul>
                 <li>
                     <h5 className="title-block mb-15">Contact</h5>
-                    <p className="text-p ">+1 (800) 990 8877</p>
+                    <p className="text-p ">+82 (010) 4242 3088</p>
                     <div className="over-hidden mt-5">
-                        <a className="link-hover" data-hover-text="info@example.com"
-                           href="#">info@example.com</a>
+                        <div>workvisa@naver.com</div>
                     </div>
 
                 </li>
                 <li>
                     <h5 className="title-block mb-15">Address</h5>
-                    <p className="text-p">United Kingdom <br /> 33—35 Southernhay East</p>
+                    <p className="text-p">경상북도<br /> 칠곡군 지천면 상납2길 11-5</p>
                 </li>
                 <li>
                     <h5 className="title-block mb-15">Follow Us</h5>
                     <div className="social-item over-hidden">
-                        <a className="link-hover" data-hover-text="Instagram." href="#"
-                           target="_blank" rel="nofollow">Instagram.</a>
-                    </div>
-                    <div className="social-item over-hidden">
-                        <a className="link-hover" data-hover-text="Facebook." href="#"
-                           target="_blank" rel="nofollow">Facebook.</a>
+                        <a className="link-hover" data-hover-text="kakaoTalk" href="http://pf.kakao.com/_qiXpxj"
+                           target="_blank" rel="nofollow">카카오톡</a>
                     </div>
                 </li>
             </ul>

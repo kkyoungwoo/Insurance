@@ -7,7 +7,6 @@ import Map from "../components/Map/Map";
 import DsnGrid from "../layout/DsnGrid";
 import InfoBox from "../components/contact/InfoBox";
 import ContactForm from "../components/contact/ContactForm";
-import NextPage2 from "../components/next/NextPage2";
 import Footer from "../components/footer/Footer";
 import Head from "next/head";
 
@@ -25,7 +24,7 @@ function About() {
             {/*========== Header Normal ========== */}
             <HeaderNormal className="text-center">
                 <p className="subtitle p-relative line-shape  mb-20">
-                    <span className="pl-10 pr-10 background-section">DESIGN STUDIO</span>
+                    <span className="pl-10 pr-10 background-section">WORK VISA COMPANY</span>
                 </p>
                 <h1 className="title text-uppercase">
                     Look around you<br/> everything is changing.
@@ -42,7 +41,7 @@ function About() {
                 mapKey="AIzaSyDMyAS2jdzj-vdgBIFaIStYOWJtSlghndg"
                 zoom={10}
                 height="80vh"
-                defaultCenter={{lat: 30.0489206, lng: 31.258553}}
+                defaultCenter={{lat: 35.917793, lng: 128.504683}}
             />
 
             {/*Start Contact Form && Info Box*/}
@@ -52,11 +51,6 @@ function About() {
                     <InfoBox className="align-self-center"/>
                 </DsnGrid>
             </div>
-
-
-            {/*========== Start Next Page Section ==========*/}
-            <NextPage2 className={`background-section section-padding`}/>
-            {/*========== End Next Page Section ==========*/}
 
             {/*========== Footer ==========*/}
             <Footer className="background-section"/>

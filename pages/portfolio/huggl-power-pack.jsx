@@ -9,6 +9,13 @@ import NextProject from "../../components/next/NextProject";
 import {getPortfolioItem} from "../../data/portfolio";
 import HeaderFull from "../../components/header/HeaderFull";
 import Image from "next/image";
+import NextPage from "../../components/next/NextPage";
+import MoveBox from "../../components/move-box/MoveBox";
+import TitleSection from "../../components/heading/TitleSection";
+
+import TitleCover from "../../components/heading/TitleCover";
+import Button from "../../components/button/Button";
+
 
 function Project3(params) {
   const heroData = getPortfolioItem('huggl-power-pack');
@@ -110,6 +117,55 @@ function Project3(params) {
       </section>
       {/*End Intro Project*/}
 
+          {/*Start Box Info Move Content*/}
+            <div className="p-relative section-margin v-light">
+                <ParallaxImage src="/img/project/project4/12.jpg" overlay={2} alt={""}/>
+                <MoveBox>
+                    <TitleSection className={`align-items-start mb-30`}
+                                  defaultSpace={false}>
+                        A simple space for a wonderful family.
+                    </TitleSection>
+
+
+                    <p className="mb-10">Nestled in a quiet enclave along the recreational waterway of Alexandra Canal,
+                        on the fringe of the embassy district</p>
+                    <p>Principal Garden reflects a new daring in residential design thinking that purposefully seeks to
+                        maximise unbuilt space amid the density of urban Singapore.</p>
+
+                </MoveBox>
+            </div>
+          {/*End Box Info Move Content*/}
+
+          <div className="p-relative pt-lg-section">
+              <div className="box-info h-100 box-padding background-section ">
+                  <TitleCover>speaker</TitleCover>
+                  <TitleSection
+                      className={"text-uppercase mb-30"}
+                      defaultSpace={false}
+                  >
+                      Maybe speaker
+                  </TitleSection>
+                  <p>
+                      A system that young people around the world with a club culture
+                      and techno enthusiasts feel identified. We generated a simple
+                      logo that is the basis for generating a geometric and liquid
+                      system.
+                  </p>
+                  <p className="mt-15">
+                      A system that young people around the world with a club culture
+                      and techno enthusiasts feel identified. We generated a simple
+                      logo that is the basis for generating a geometric and liquid
+                      system.
+                  </p>
+                  <Button href="#0" className="mt-30">
+                      View More <span className="icon">⟶</span>
+                  </Button>
+              </div>
+          </div>
+
+      {/*========== Start Next Page Section ==========*/}
+      <NextPage className={`background-section section-padding`}/>
+      {/*========== End Next Page Section ==========*/}
       <NextProject heroContent={getPortfolioItem('principal-garden')} number={2}  />
     </Layout>
   );

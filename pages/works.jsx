@@ -1,7 +1,6 @@
 import React from "react";
 import HeaderNormal from "../components/header/HeaderNormal";
 import Layout from "../layout/Layout";
-import NextPage from "../components/next/NextPage";
 import Portfolio from "../components/portfolio/Portfolio";
 import ModalContact from "../components/model-right/ModalContact";
 import Footer from "../components/footer/Footer";
@@ -36,10 +35,6 @@ function Work() {
                            col={3} colGap={50} rowGap={80}
                 />
             </div>
-
-            {/*========== Start Next Page Section ==========*/}
-            <NextPage className={`background-section section-padding`}/>
-            {/*========== End Next Page Section ==========*/}
             {/*========== Footer ==========*/}
             <Footer className="background-section"/>
             {/*========== End Footer ==========*/}

@@ -50,7 +50,7 @@ function ContactForm({className}) {
                     <div className="input__wrap controls">
                         <div className="form-group">
                             <div className="entry-box">
-                                <label>Your name *</label>
+                                <label>이름</label>
                                 <input id="form_name" type="text" name="name"
                                        placeholder="Type your name" required="required"
                                        data-error="name is required." />
@@ -59,19 +59,19 @@ function ContactForm({className}) {
 
                         <div className="form-group">
                             <div className="entry-box">
-                                <label>Your E-Mail *</label>
-                                <input id="form_email" type="email" name="email"
-                                       placeholder="Type your Email Address" required="required"
-                                       data-error="Valid email is required." />
+                                <label>전화번호</label>
+                                <input id="number" type="number" name="number"
+                                       placeholder="Type your Phone number" required="required"
+                                       data-error="Valid Phone number is required." />
                             </div>
                         </div>
 
                         <div className="form-group">
                             <div className="entry-box">
                                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                                <label>What's up?</label>
+                                <label>문의내용</label>
                                 <textarea id="form_message" className="form-control" name="message" rows={4}
-                                          placeholder="Tell us about you and the world"
+                                          placeholder="Tell us about you and the work"
                                           required="required"
                                           data-error="Please,leave us a message." />
                             </div>
