@@ -36,8 +36,6 @@
 @include MarginPadding(10, 10, ".h-v", height, "vh");
 @include MarginPadding(10, 10, ".w", width, "%");
 
-
-
 .d-grid {
   display: grid;
 

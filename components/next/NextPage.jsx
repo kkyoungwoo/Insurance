@@ -3,7 +3,7 @@ import Button from "../button/Button";
 import BgDot from "../header/BgDot";
 
 const NextContent = {
-    buttonText: "OUR WORKS"
+    buttonText: "영업 제안서"
 };
 
 const NextContent2 = {
@@ -31,11 +31,11 @@ function NextPage({className, ...restProps}) {
                     </div>
                     <div className="button-box d-flex justify-content-end align-items-center">
                         <Button
-                            href={"/works"}
+                            href={"https://drive.google.com/file/d/1afU3iChAEwO-uroCoqP4xzIg881i9bbI/view?usp=sharing"}
+                            target="_blank" rel="noopener noreferrer"
                             className="mr-15 line-head"
                             borderStyle={"border-color-heading-color"}
                             borderRadius
-                            transitionPage={{title: NextContent.buttonText}}
                         >
                             {NextContent.buttonText}
                         </Button>

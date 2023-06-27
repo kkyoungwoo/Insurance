@@ -19,7 +19,7 @@ function About() {
     return (
         <Layout>
             <Head>
-                <title>Contact Us | WORK VISA Creative Portfolio Multi-Purpose</title>
+                <title>영업 문의하기 | WORK VISA</title>
             </Head>
             {/*========== Header Normal ========== */}
             <HeaderNormal className="text-center">
@@ -27,12 +27,9 @@ function About() {
                     <span className="pl-10 pr-10 background-section">WORK VISA COMPANY</span>
                 </p>
                 <h1 className="title text-uppercase">
-                    Look around you<br/> everything is changing.
+                    지금 합류하세요
                 </h1>
-                <p className="dsn-heading-title mt-15 max-w570">What if the time has come for you to
-                    change?
-                    Starting a collaboration is easy! Order a free consultation or call back. We are always in touch and
-                    happy to cooperate with you
+                <p className="dsn-heading-title mt-15 max-w570">워크비자는 성장을 목표로 하는 사람을 기다리고 있습니다
                 </p>
             </HeaderNormal>
             {/*========== End Header Normal ==========*/}

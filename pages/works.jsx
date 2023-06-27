@@ -13,16 +13,16 @@ function Work() {
     return (
         <Layout modelRight={{children: <ModalContact/>, propsModal: {textBtn: "Contact"}}}>
             <Head>
-                <title>Portfolio  | WORK VISA Creative Portfolio Multi-Purpose</title>
+                <title>영업 인프라 | WORK VISA</title>
             </Head>
 
         {/*========== Header Normal ========== */}
             <HeaderNormal backgroundColor="background-section" className="text-center">
                 <p className="subtitle p-relative line-shape  dsn-load-animate">
-                    <span className="pl-10 pr-10 background-main">SOME OF OUR LATEST</span>
+                    <span className="pl-10 pr-10 background-main">영업 인프라</span>
                 </p>
                 <h1 className="title text-uppercase">
-                    OUR BEST WORKS
+                    OUR WORKS
                 </h1>
             </HeaderNormal>
             {/*========== End Header Normal ==========*/}

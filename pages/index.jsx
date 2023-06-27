@@ -28,7 +28,7 @@ function Home() {
     return (
         <Layout modelRight={{children: <ModalContact/>, propsModal: {textBtn: "Contact"}}}>
             <Head>
-                <title>workvisa | 헤드헌팅 영업크루 모집</title>
+                <title>영업크루 모집 | WORK VISA</title>
             </Head>
             <SliderPortfolio
                 webgel
@@ -131,29 +131,6 @@ function Home() {
                     <SwiperPagination className={`justify-content-between dsn-container mt-30`}/>
                 </Testimonial>
             </div>
-
-
-            {/*End testimonial Section*/}
-
-            {/*Start box vertical Section*/}
-            <section className="box-gallery-vertical container" data-dsn-title="Get in touch">
-                <DsnGrid col={2} colTablet={1} colGap={0} rowGap={0} rowGapTablet={0} rowGapMobile={0}>
-                    <div className="p-relative mb-lg-section">
-                        <div className="box-im w-100 h-100 p-absolute">
-                            <ParallaxImage
-                                alt={""}
-                                src={"/img/plan-project.jpg"}
-                                overlay={3}
-                                height="100%"
-                                heightTable={"70vh"}
-                                heightMobile={"70vh"}
-                                sizes="(max-width: 768px) 100vw,(max-width: 1200px) 70vw,33vw"
-                            />
-                        </div>
-                    </div>
-                </DsnGrid>
-            </section>
-            {/*End box vertical Section*/}
 
             {/*========== Next Page ==========*/}
             <NextPage className="section-padding border-top background-section"/>
