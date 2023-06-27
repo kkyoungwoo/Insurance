@@ -10,7 +10,6 @@ import Button from "../components/button/Button";
 import PortfolioSwiper from "../components/portfolio/PortfolioSwiper";
 import SwiperPagination from "../components/swiper-pagination/SwiperPagination";
 import Testimonial from "../components/testimonial/Testimonial";
-import DsnGrid from "../layout/DsnGrid";
 
 import NextPage from "../components/next/NextPage";
 import Footer from "../components/footer/Footer";
@@ -36,7 +35,7 @@ function Home() {
                 className={"align-items-end pb-80"}
                 webgelOptions={{
                     displacement: "/img/displacement/8.jpg",
-                    speedIn: 3.5,
+                    speedIn: 1,
                 }}
                 metaData={{hasSeparator: true}}
             />
@@ -56,7 +55,7 @@ function Home() {
 
             {/*Start Box Info Move Content*/}
             <div className="p-relative section-margin" data-dsn-title="ALL commission">
-                <ParallaxImage src="/img/project/project3/2.jpg" overlay={2} alt={""}/>
+                <ParallaxImage src="/img/about-center.jpg" overlay={2} alt={""}/>
                 <MoveBox tablet={false}>
                     <TitleSection
                         className={`align-items-start mb-30`}

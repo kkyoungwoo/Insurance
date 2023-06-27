@@ -52,7 +52,7 @@ function ContactForm({className}) {
                     문의작성
                 </TitleSection>
                 <p className="mb-30 mt-20">
-                    문의작성 후 신청해주시면 답변해드리고 있습니다
+                    문의 작성 후 신청해 주시면 답변해 드리고 있습니다
                 </p>
 
                 <form  className="form"  ref={form} onSubmit={sendEmail} >

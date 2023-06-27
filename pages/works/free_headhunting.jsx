@@ -55,60 +55,48 @@ function Project3(params) {
       {/*End Intro Project*/}
 
       <div className="p-relative pt-lg-section">
-              <div className="box-info h-100 box-padding background-section ">
-                  <TitleCover>speaker</TitleCover>
-                  <TitleSection
-                      className={"text-uppercase mb-30"}
-                      defaultSpace={false}
-                  >
-                      상세히 알고싶으신가요?
-                  </TitleSection>
-                  <p>
-                      A system that young people around the world with a club culture
-                      and techno enthusiasts feel identified. We generated a simple
-                      logo that is the basis for generating a geometric and liquid
-                      system.
-                  </p>
-                  <p className="mt-15">
-                      A system that young people around the world with a club culture
-                      and techno enthusiasts feel identified. We generated a simple
-                      logo that is the basis for generating a geometric and liquid
-                      system.
-                  </p>
-                  <Button href="https://naver.com" className="mt-30">
-                      View More <span className="icon">⟶</span>
-                  </Button>
-              </div>
-          </div>
-
-      {/*Start Intro Project*/}
-      <section className="container section-margin text-center">
-        <div className="p-relative">
-          <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-            These lights also provide guidance on power pack charge.
-          </h4>
-        </div>
-      </section>
-      {/*End Intro Project*/}
-
-          {/*Start Box Info Move Content*/}
-            <div className="p-relative section-margin v-light">
-                <ParallaxImage src="/img/project/project4/12.jpg" overlay={2} alt={""}/>
-                <MoveBox>
-                    <TitleSection className={`align-items-start mb-30`}
-                                  defaultSpace={false}>
-                        최대 2,000만원 수익
-                    </TitleSection>
-
-
-                    <p className="mb-10">Nestled in a quiet enclave along the recreational waterway of Alexandra Canal,
-                        on the fringe of the embassy district</p>
-                    <p>Principal Garden reflects a new daring in residential design thinking that purposefully seeks to
-                        maximise unbuilt space amid the density of urban Singapore.</p>
-
-                </MoveBox>
+            <div className="box-info h-100 box-padding background-section ">
+                <TitleCover>speaker</TitleCover>
+                <TitleSection
+                    className={"text-uppercase mb-30"}
+                    defaultSpace={false}
+                >
+                    상세히 알고 싶으신가요?
+                </TitleSection>
+                <p className="mt-15">
+                    영업 프로세스는 오프라인 교육을 통해 안내됩니다
+                </p>
+                {/*<Button href="https://naver.com" className="mt-30">
+                    View More <span className="icon">⟶</span>
+                </Button>*/}
             </div>
-          {/*End Box Info Move Content*/}
+        </div>
+
+    {/*Start Intro Project*/}
+    <section className="container section-margin text-center">
+      <div className="p-relative">
+        <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
+          사업장의 문제발견 후 전문 컨설턴트 매칭 업무
+        </h4>
+      </div>
+    </section>
+    {/*End Intro Project*/}
+
+        {/*Start Box Info Move Content*/}
+          <div className="p-relative section-margin v-light">
+              <ParallaxImage src="/img/work/consulting.jpg" overlay={2} alt={""}/>
+              <MoveBox>
+                  <TitleSection className={`align-items-start mb-30`}
+                                defaultSpace={false}>
+                      최대 2,000만원 수익
+                  </TitleSection>
+
+
+                  <p className="mb-10">평균 1,000만원 수익</p>
+
+              </MoveBox>
+          </div>
+        {/*End Box Info Move Content*/}
 
       {/*========== Start Next Page Section ==========*/}
       <NextPage className={`background-section section-padding`}/>

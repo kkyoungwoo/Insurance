@@ -9,7 +9,8 @@ const NextContent = {
 const NextContent2 = {
     title: "블루오션 영업크루 모집",
     subtitle: `보험영업 경험자 우대`,
-    buttonText: "영업문의"
+    buttonText: "영업문의",
+    Text: "영업크루"
 };
 
 function NextPage({className, ...restProps}) {
@@ -44,7 +45,7 @@ function NextPage({className, ...restProps}) {
                             className="mr-15 line-head"
                             borderStyle={"border-color-heading-color"}
                             borderRadius
-                            transitionPage={{title: NextContent2.buttonText}}
+                            transitionPage={{title: NextContent2.Text}}
                         >
                             {NextContent2.buttonText}
                         </Button>

@@ -29,7 +29,7 @@ function About() {
                 <h1 className="title text-uppercase">
                     지금 합류하세요
                 </h1>
-                <p className="dsn-heading-title mt-15 max-w570">워크비자는 성장을 목표로 하는 사람을 기다리고 있습니다
+                <p className="dsn-heading-title mt-15 max-w570">워크비자는 지금 이 시간에도 달려가고 있습니다
                 </p>
             </HeaderNormal>
             {/*========== End Header Normal ==========*/}
@@ -37,7 +37,7 @@ function About() {
             <Map
                 mapKey="AIzaSyDMyAS2jdzj-vdgBIFaIStYOWJtSlghndg"
                 zoom={10}
-                height="80vh"
+                height="50vh"
                 defaultCenter={{lat: 35.917793, lng: 128.504683}}
             />
 
