@@ -128,8 +128,8 @@ function MyApp({Component, pageProps}) {
             <link rel="apple-touch-icon" href="/img/favicon.ico"/>
             <meta name="description" content="블루오션 영업크루 모집"/>
             <meta property="og:description" content="블루오션 영업크루 모집" />
-            <meta property="image" content="/img/opimage.png" />
-            <meta property="og:image" content="/img/opimage.png" />
+            <meta property="image" content="/img/opimage.jpg" />
+            <meta property="og:image" content="/img/opimage.jpg" />
             
             <meta property="og:type" content="website" />
             {/*<meta property="og:url" content="" />*/}
