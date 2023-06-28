@@ -55,7 +55,7 @@ function Home() {
 
             {/*Start Box Info Move Content*/}
             <div className="p-relative section-margin" data-dsn-title="ALL commission">
-                <ParallaxImage src="/img/about-center.jpg" overlay={2} alt={""}/>
+                <ParallaxImage src="/img/about-center.jpg" overlay={1} alt={""}/>
                 <MoveBox tablet={false}>
                     <TitleSection
                         className={`align-items-start mb-30`}

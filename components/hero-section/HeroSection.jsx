@@ -72,7 +72,7 @@ function HeroSection({className, ...restProps}) {
                         <div className="line line-right"/>
 
                         <div className="img-box h-100">
-                            <ParallaxImage src={HeroContent.heroImage} alt={"about"} height="100%" overlay={4}
+                            <ParallaxImage src={HeroContent.heroImage} alt={"about"} height="100%" overlay={3}
                                            sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw,33vw"/>
                         </div>
 

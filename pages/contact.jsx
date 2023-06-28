@@ -29,7 +29,7 @@ function About() {
                 <h1 className="title text-uppercase">
                     지금 합류하세요
                 </h1>
-                <p className="dsn-heading-title mt-15 max-w570">워크비자는 지금 이 시간에도 달려가고 있습니다
+                <p className="dsn-heading-title mt-15 max-w570">워크비자는 지금 이 시간에도 달리고 있습니다
                 </p>
             </HeaderNormal>
             {/*========== End Header Normal ==========*/}

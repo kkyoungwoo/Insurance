@@ -9,7 +9,7 @@ const data = [
 
         category: ['headhunting'],
         description: '합법취업 상근 헤드헌팅 외국 일반인력',
-        overlay: 2
+        overlay: 4
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const data = [
 
         category: ['headhunting'],
         description: '합법취업 상근 헤드헌팅 외국 전문인력',
-        overlay: 2
+        overlay: 5
     },
     {
         id: 3,
@@ -28,8 +28,8 @@ const data = [
         src: '/img/work/remote_work_main.jpg',
 
         category: ['headhunting'],
-        description: '비상주(비대면) 개발자 및 단순업무 외국 인력',
-        overlay: 2
+        description: '비상주(비대면) 개발자 및 단순 반복작업 외국 인력',
+        overlay: 3
     },
     {
         id: 4,
@@ -39,7 +39,7 @@ const data = [
 
         category: ['insurance'],
         description: '세금절감, 경정청구, 법정의무교육 등 법인기업 컨설팅',
-        overlay: 2
+        overlay: 6
     },
     {
         id: 5,
@@ -59,7 +59,7 @@ const data = [
 
         category: ['etc'],
         description: '외국인을 대상으로한 알뜰폰, 부동산 등 기타 영업툴',
-        overlay: 2
+        overlay: 5
     }
 ]
 

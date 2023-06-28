@@ -35,7 +35,7 @@ function Project3(params) {
               <strong>업무</strong> 기타 영업
             </li>
             <li className="p-relative">
-              <strong>수수료</strong>회사서치+비자발급 매칭당 100만원
+              <strong>수수료</strong>고정급 및 건별 수수료
             </li>
             <li className="p-relative">
               <strong>급여일</strong>익월 10일
@@ -48,9 +48,9 @@ function Project3(params) {
             업무절차는 아래와 같습니다
           </p>
           <div className="intro-project-cat mt-30">
-            <span className="cat-item">회사 검색</span>
-            <span className="cat-item">회사 정보 수집</span>
-            <span className="cat-item">회사 정보 전달</span>
+            <span className="cat-item">영업툴 숙지</span>
+            <span className="cat-item">영업</span>
+            <span className="cat-item">영업 정보 전달</span>
             <span className="cat-item">급여 수령</span>
           </div>
         </div>
@@ -80,7 +80,7 @@ function Project3(params) {
     <section className="container section-margin text-center">
       <div className="p-relative">
         <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-          사업장의 문제발견 후 전문 컨설턴트 매칭 업무
+          외국인과 국내 사업장을 대상으로한 영업 인프라 제공
         </h4>
       </div>
     </section>
@@ -88,15 +88,16 @@ function Project3(params) {
 
         {/*Start Box Info Move Content*/}
           <div className="p-relative section-margin v-light">
-              <ParallaxImage src="/img/work/consulting.jpg" overlay={2} alt={""}/>
+              <ParallaxImage src="/img/work/etc.jpg" overlay={2} alt={""}/>
               <MoveBox>
                   <TitleSection className={`align-items-start mb-30`}
                                 defaultSpace={false}>
-                      최대 2,000만원 수익
+                      신입 영업불가
                   </TitleSection>
 
 
-                  <p className="mb-10">평균 1,000만원 수익</p>
+                  <p className="mb-10">기본급 + α 수익</p>
+                  <p className="mb-10">다양한 수익 인프라 및 관리자 권한 부여</p>
 
               </MoveBox>
           </div>

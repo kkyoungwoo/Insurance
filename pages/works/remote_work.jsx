@@ -35,7 +35,7 @@ function Project3(params) {
               <strong>업무</strong> 리무트
             </li>
             <li className="p-relative">
-              <strong>수수료</strong>회사서치+비자발급 매칭당 100만원
+              <strong>수수료</strong>1개월 10만원
             </li>
             <li className="p-relative">
               <strong>급여일</strong>익월 10일
@@ -80,7 +80,7 @@ function Project3(params) {
     <section className="container section-margin text-center">
       <div className="p-relative">
         <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-          사업장의 문제발견 후 전문 컨설턴트 매칭 업무
+          개발 및 단순 반복작업 비상주 외국인이 필요한 회사에게 100-200만원의 비용으로 온라인 매칭하는 업무
         </h4>
       </div>
     </section>
@@ -88,15 +88,16 @@ function Project3(params) {
 
         {/*Start Box Info Move Content*/}
           <div className="p-relative section-margin v-light">
-              <ParallaxImage src="/img/work/consulting.jpg" overlay={2} alt={""}/>
+              <ParallaxImage src="/img/work/remote_work.jpg" overlay={2} alt={""}/>
               <MoveBox>
                   <TitleSection className={`align-items-start mb-30`}
                                 defaultSpace={false}>
-                      최대 2,000만원 수익
+                      매월 10만원 x N 수익
                   </TitleSection>
 
 
-                  <p className="mb-10">평균 1,000만원 수익</p>
+                  <p className="mb-10">고용과 해고가 자유로운 비상주 외국인 고용</p>
+                  <p className="mb-10">급여 예시) 10명을 6개월 비상주 계약시 600만원 수익</p>
 
               </MoveBox>
           </div>

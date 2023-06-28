@@ -32,13 +32,13 @@ function Project3(params) {
           <h4 className="title-block text-uppercase mb-20">info</h4>
           <ul className="intro-project-list">
             <li className="p-relative">
-              <strong>업무</strong> 보험 컨설팅
+              <strong>업무</strong> 개인영업, 기업영업, 리쿠르팅
             </li>
             <li className="p-relative">
-              <strong>수수료</strong>회사서치+비자발급 매칭당 100만원
+              <strong>수수료</strong>평균 100만원
             </li>
             <li className="p-relative">
-              <strong>급여일</strong>익월 10일
+              <strong>급여일</strong>보험사 급여일
             </li>
           </ul>
         </div>
@@ -48,9 +48,9 @@ function Project3(params) {
             업무절차는 아래와 같습니다
           </p>
           <div className="intro-project-cat mt-30">
-            <span className="cat-item">회사 검색</span>
-            <span className="cat-item">회사 정보 수집</span>
-            <span className="cat-item">회사 정보 전달</span>
+            <span className="cat-item">고객 미팅</span>
+            <span className="cat-item">고객 관리</span>
+            <span className="cat-item">계약 체결</span>
             <span className="cat-item">급여 수령</span>
           </div>
         </div>
@@ -80,7 +80,7 @@ function Project3(params) {
     <section className="container section-margin text-center">
       <div className="p-relative">
         <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-          사업장의 문제발견 후 전문 컨설턴트 매칭 업무
+          지인영업, 기업영업, DB영업 등으로 보험사에서 책정된 수수료를 지급받는 업무, 워크비자 업계 최고 수수료 보유
         </h4>
       </div>
     </section>
@@ -88,15 +88,16 @@ function Project3(params) {
 
         {/*Start Box Info Move Content*/}
           <div className="p-relative section-margin v-light">
-              <ParallaxImage src="/img/work/consulting.jpg" overlay={2} alt={""}/>
+              <ParallaxImage src="/img/work/insurance.jpg" overlay={2} alt={""}/>
               <MoveBox>
                   <TitleSection className={`align-items-start mb-30`}
                                 defaultSpace={false}>
-                      최대 2,000만원 수익
+                      평균 100만원 수익
                   </TitleSection>
 
 
-                  <p className="mb-10">평균 1,000만원 수익</p>
+                  <p className="mb-10">계약 1건당 평균 100만원 수익</p>
+                  <p className="mb-10">급여 예시) 10명 보험 계약시 약 1,000만원 수익</p>
 
               </MoveBox>
           </div>
