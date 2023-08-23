@@ -12,6 +12,9 @@ function Copyright({className, ...restProps}) {
         <h5>
             <span style={{marginLeft:"10px"}}>사업자등록번호 : 884-18-01907</span>
         </h5>
+        <h5>
+            <span style={{marginLeft:"10px"}}>대표 : 고경우</span>
+        </h5>
         </>
     );
 }
