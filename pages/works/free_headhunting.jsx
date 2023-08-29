@@ -31,7 +31,7 @@ function Project3(params) {
                 <strong>업무</strong>외국인 합법취업이 가능한 회사 모집
               </li>
               <li className="p-relative">
-                <strong>수수료</strong>매칭당 100만원
+                <strong>수수료</strong>매칭당 50만원
               </li>
               <li className="p-relative">
                 <strong>급여일</strong>익월 10일
@@ -76,7 +76,10 @@ function Project3(params) {
     <section className="container section-margin text-center">
       <div className="p-relative">
         <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-          해외영업 무역 등 해외에 관련된 업무를 하거나 용접공, 정비원등 기능인력 외국인이 필요한 사업자를 찾는 업무
+          해외영업 무역 등 해외에 관련된 업무를 하거나 용접공, 연구원등 전문인력 외국인이 필요한 사업장을 찾는 업무
+        </h4>
+        <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
+          외국인이 회사검색 및 비자발급 비용을 지불하기 때문에 사업장에서 발생하는 수수료 없음
         </h4>
       </div>
     </section>
@@ -88,12 +91,12 @@ function Project3(params) {
               <MoveBox>
                   <TitleSection className={`align-items-start mb-30`}
                                 defaultSpace={false}>
-                      고정 100만원 수익
+                      고정 50만원 수익
                   </TitleSection>
 
 
                   <p className="mb-10">사업장은 무료 헤드헌팅 (외국인이 비용 지불)</p>
-                  <p className="mb-10">급여 예시) 10명을 취업 매칭시 1,000만원 수익</p>
+                  <p className="mb-10">급여 예시) 10명을 취업 매칭시 5,000,000원 수익</p>
 
               </MoveBox>
           </div>

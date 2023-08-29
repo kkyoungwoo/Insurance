@@ -80,7 +80,7 @@ function Project3(params) {
     <section className="container section-margin text-center">
       <div className="p-relative">
         <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-          개발 및 단순 반복작업 비상주 외국인이 필요한 회사에게 100-200만원의 비용으로 온라인 매칭하는 업무
+          개발 및 단순 반복작업 비상주 외국인이 필요한 회사에게 저렴한 비용(100-200만원)으로 근로자를 매칭하는 업무
         </h4>
       </div>
     </section>
