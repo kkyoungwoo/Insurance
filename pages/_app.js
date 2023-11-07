@@ -126,8 +126,8 @@ function MyApp({Component, pageProps}) {
             <title>WORK VISA Creative Portfolio Multi-Purpose</title>
             <link rel="icon" href="/img/favicon.ico"/>
             <link rel="apple-touch-icon" href="/img/favicon.ico"/>
-            <meta name="description" content="블루오션 영업크루 모집"/>
-            <meta property="og:description" content="블루오션 영업크루 모집" />
+            <meta name="description" content="외국인영업 블루오션 영업크루 모집"/>
+            <meta property="og:description" content="외국인영업 블루오션 영업크루 모집" />
             <meta property="image" content="/img/ogimage.jpg" />
             <meta property="og:image" content="/img/ogimage.jpg" />
             

@@ -21,8 +21,8 @@ function InfoBox({className}) {
                 <li>
                     <h5 className="title-block mb-15">Follow Us</h5>
                     <div className="social-item over-hidden">
-                        <a className="link-hover" data-hover-text="kakaoTalk" href="http://pf.kakao.com/_qiXpxj"
-                           target="_blank" rel="nofollow">카카오톡</a>
+                        <a className="link-hover" data-hover-text="kakaoTalk Message" href="http://pf.kakao.com/_qiXpxj"
+                           target="_blank" rel="nofollow">카카오톡 문의하기</a>
                     </div>
                 </li>
             </ul>
