@@ -108,7 +108,7 @@ function ContactForm({className}) {
             <div className="image-zoom w-auto d-inline-block" data-dsn="parallax">
                 <button type="submit" className="dsn-button" style={{cursor:"pointer"}}>
                     <span className="dsn-border border-color-default" />
-                    <span className="text-button">문의신청(현재 온라인 접수 불가능)</span>
+                    <span className="text-button">문의신청(현재 온라인 접수 불가)</span>
                 </button>
             </div>
             {loading && <div className="loading-message mt-20">메세지 발송중 ...</div>}

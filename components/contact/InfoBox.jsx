@@ -2,17 +2,22 @@ import React from 'react';
 import {dsnCN} from "../../hooks/helper";
 
 function InfoBox({className}) {
-    return (
+    const copyEmail = () => {
+        navigator.clipboard.writeText("workvisa@naver.com");
+        alert("이메일이 복사되었습니다.");
+    };
 
+    return (
         <div className={dsnCN('box-info-contact', className)}>
             <ul>
                 <li>
                     <h5 className="title-block mb-15">Contact</h5>
-                    <p className="text-p ">+82 (010) 4242 3088</p>
-                    <div className="over-hidden mt-5">
+                    <p className="text-p">
+                        <a href="tel:+821042423088">+82 (010) 4242 3088</a>
+                    </p>
+                    <div className="over-hidden mt-5" style={{cursor: "pointer"}} onClick={copyEmail}>
                         <div>workvisa@naver.com</div>
                     </div>
-
                 </li>
                 <li>
                     <h5 className="title-block mb-15">Address</h5>
@@ -27,7 +32,6 @@ function InfoBox({className}) {
                 </li>
             </ul>
         </div>
-
     );
 }
 

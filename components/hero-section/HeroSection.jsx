@@ -8,12 +8,12 @@ import FadeUpTrigger from "../../animation/FadeUpTrigger";
 
 
 const HeroContent = {
-    title: "부가 수익을 원하는 당신을 기다리고 있습니다",
-    subtitle: `워크비자는 바로 시작할 수 있는 수익구조를 가지고 있습니다 `,
+    title: "부가 수익이 당신을 기다리고 있습니다",
+    subtitle: `워크비자 영업은 바로 시작할 수 있습니다 `,
     description: `1. 저출산 문제로 중소기업에 인력난 발생<span class="mb-10 d-block" ></span>
     2. 외국인 합법 구인구직으로 인력난 해결<span class="mb-10 d-block" ></span>
     3. 지속가능한 부가수익 발생<span class="mb-10 d-block" ></span>`,
-    authorTitle: "제공되는 인프라",
+    authorTitle: "체계적으로 제공되는 인프라",
     authorJob: "DB, Semina, VOD, E-Book, On-boarding",
     experienceNumber: "5",
     experienceDescription: `인프라 제공`,
