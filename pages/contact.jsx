@@ -38,7 +38,7 @@ function About() {
                 mapKey="AIzaSyDMyAS2jdzj-vdgBIFaIStYOWJtSlghndg"
                 zoom={10}
                 height="50vh"
-                defaultCenter={{lat: 35.917793, lng: 128.504683}}
+                defaultCenter={{lat: 35.874233, lng: 128.624291}}
             />
 
             {/*Start Contact Form && Info Box*/}

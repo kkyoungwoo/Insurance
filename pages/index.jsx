@@ -62,22 +62,22 @@ function Home() {
                         description={"Highest Commission Offered"}
                         defaultSpace={false}
                     >
-                        최대 2,000만원 수익
+                        처음 하게되는 일은?
                     </TitleSection>
 
                     <p className="mb-10">
-                    하나의 사업장을 영업했을때 받을 수 있는
+                        외국인 인재풀 제공 영업을 진행합니다
                     </p>
                     <p className=" mb-30">
-                        수수료는 최대 2,000만원입니다
+                        하루 한건만 해도 90,000원의 월 고정 수익이 발생됩니다
                     </p>
 
                     <Button href={"https://workvisa.co.kr"} target="_blank" rel="noopener noreferrer">
-                        구인구직 플랫폼 <span>⟶</span>
+                        외국인 구인구직 플랫폼 <span>⟶</span>
                     </Button>
 
                     <p className={`sm-p mt-15 theme-color`}>
-                        영업 관리 채널
+                        ↑ 영업 대상 홈페이지
                     </p>
                 </MoveBox>
             </div>
@@ -90,7 +90,7 @@ function Home() {
                     className={`container align-items-center text-center`}
                     description={"commission List"}
                 >
-                    수수료 구조<br/>
+                    영업 인프라 제공 가능<br/>
                 </TitleSection>
                 <PortfolioSwiper
                     grabCursor

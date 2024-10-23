@@ -52,67 +52,72 @@ function ContactForm({className}) {
                     문의작성
                 </TitleSection>
                 <p className="mb-30 mt-20">
-                    문의 작성 후 신청해 주시면 답변해 드리고 있습니다
+                    이메일 또는 연락처로 문의내용을 보내주세요
                 </p>
 
                 <form  className="form"  ref={form} onSubmit={sendEmail} >
-                    <div className="input__wrap controls">
-                        <div className="form-group">
-                            <div className="entry-box">
-                                <label>이름</label>
-                                <input id="name" type="text" name="name"
-                                       placeholder="Type your name" required="required"
-                                       data-error="name is required." />
-                            </div>
-                        </div>
+    <div className="input__wrap controls">
+        <div className="form-group">
+            <div className="entry-box">
+                <label>이름</label>
+                <input id="name" type="text" name="name"
+                       placeholder="Type your name" required="required"
+                       data-error="name is required."
+                       readOnly />
+            </div>
+        </div>
 
-                        <div className="form-group">
-                            <div className="entry-box">
-                                <label>전화번호</label>
-                                <input id="phone" type="number" name="phone"
-                                       placeholder="Type your Phone number" required="required"
-                                       data-error="Valid Phone number is required." />
-                            </div>
-                        </div>
+        <div className="form-group">
+            <div className="entry-box">
+                <label>전화번호</label>
+                <input id="phone" type="number" name="phone"
+                       placeholder="Type your Phone number" required="required"
+                       data-error="Valid Phone number is required."
+                       readOnly />
+            </div>
+        </div>
 
-                        <div className="form-group">
-                            <div className="entry-box">
-                                <label>거주지</label>
-                                <input id="location" type="text" name="location"
-                                       placeholder="Type your Address" required="required"
-                                       data-error="Valid address is required." />
-                            </div>
-                        </div>
+        <div className="form-group">
+            <div className="entry-box">
+                <label>거주지</label>
+                <input id="location" type="text" name="location"
+                       placeholder="Type your Address" required="required"
+                       data-error="Valid address is required."
+                       readOnly />
+            </div>
+        </div>
 
-                        <div className="form-group">
-                            <div className="entry-box">
-                                {/* eslint-disable-next-line react/no-unescaped-entities */}
-                                <label>문의내용</label>
-                                <textarea id="message" className="form-control" name="message" rows={4}
-                                          placeholder="Tell us about you and the work"
-                                          required="required"
-                                          data-error="Please,leave us a message." />
-                            </div>
-                        </div>
+        <div className="form-group">
+            <div className="entry-box">
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
+                <label>문의내용</label>
+                <textarea id="message" className="form-control" name="message" rows={4}
+                          placeholder="Tell us about you and the work"
+                          required="required"
+                          data-error="Please, leave us a message."
+                          readOnly />
+            </div>
+        </div>
 
-                        <div className="entry-box" style={{display:"none"}}>
-                                <label>value</label>
-                                <input id="value" type="text" name="value" value={value}/>
-                        </div>
+        <div className="entry-box" style={{display:"none"}}>
+            <label>value</label>
+            <input id="value" type="text" name="value" value={value} />
+        </div>
 
-                        <div className="text-right">
-                            <div className="image-zoom w-auto d-inline-block" data-dsn="parallax">
-                                <button type="submit" className="dsn-button" style={{cursor:"pointer"}}>
-                                    <span className="dsn-border border-color-default" />
-                                    <span className="text-button">문의신청</span>
-                                </button>
-                            </div>
-                            {loading && <div className="loading-message mt-20">메세지 발송중 ...</div>}
-                            {result &&
-                            <p className="success-message mt-20">메시지가 성공적으로 전송되었습니다. 곧 연락드리겠습니다</p>}
-                        </div>
-                    </div>
-                </form>
+        <div className="text-right">
+            <div className="image-zoom w-auto d-inline-block" data-dsn="parallax">
+                <button type="submit" className="dsn-button" style={{cursor:"pointer"}}>
+                    <span className="dsn-border border-color-default" />
+                    <span className="text-button">문의신청(현재 온라인 접수 불가능)</span>
+                </button>
+            </div>
+            {loading && <div className="loading-message mt-20">메세지 발송중 ...</div>}
+            {result &&
+            <p className="success-message mt-20">메시지가 성공적으로 전송되었습니다. 곧 연락드리겠습니다</p>}
+        </div>
+    </div>
+</form>
+
             </div>
 
 

@@ -7,10 +7,10 @@ const NextContent = {
 };
 
 const NextContent2 = {
-    title: "블루오션 영업크루 모집",
-    subtitle: `보험영업 경험자 우대`,
-    buttonText: "영업문의",
-    Text: "영업크루"
+    title: "블루오션, 영업 팀원 모집",
+    subtitle: `시작부터 수익이 발생할 수 있는 인프라부터 제공합니다`,
+    buttonText: "영업 상담",
+    Text: "영업 상담"
 };
 
 function NextPage({className, ...restProps}) {
@@ -31,7 +31,7 @@ function NextPage({className, ...restProps}) {
                         </h2>
                     </div>
                     <div className="button-box d-flex justify-content-end align-items-center">
-                        <Button
+                        {/*<Button
                             href={"./free_headhunting.pdf"}
                             target="_blank" rel="noopener noreferrer"
                             className="mr-15 line-head"
@@ -39,7 +39,7 @@ function NextPage({className, ...restProps}) {
                             borderRadius
                         >
                             {NextContent.buttonText}
-                        </Button>
+                        </Button>*/}
                         <Button
                             href={"/contact"}
                             className="mr-15 line-head"

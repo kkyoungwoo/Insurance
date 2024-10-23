@@ -92,7 +92,7 @@ function Project3(params) {
               <MoveBox>
                   <TitleSection className={`align-items-start mb-30`}
                                 defaultSpace={false}>
-                      신입 영업불가
+                      장기 근속자만 인프라 제공
                   </TitleSection>
 
 

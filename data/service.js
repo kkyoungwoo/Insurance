@@ -68,8 +68,8 @@ const servicesDetails = [
                 </g>
             </g>
         </svg>,
-        title: "리모트 워크",
-        description: "해외에 있는 개발자 또는 한국어가 가능한 외국인을 한국인 월급의 1/2 정도의 비용으로 고용할 수 있는 서비스로, 고용과 해고가 자유롭다는 장점을 가지고 있습니다",
+        title: "인재풀 열람권 판매",
+        description: "외국인 근로자가 필요한 기업에 외국인 인재풀의 열람권을 판매하는 업무입니다",
     },
     {
         icon: <svg enableBackground="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">

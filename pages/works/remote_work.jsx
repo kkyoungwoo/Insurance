@@ -32,10 +32,10 @@ function Project3(params) {
           <h4 className="title-block text-uppercase mb-20">info</h4>
           <ul className="intro-project-list">
             <li className="p-relative">
-              <strong>업무</strong> 리무트
+              <strong>업무</strong> 인재풀 열람권 판매
             </li>
             <li className="p-relative">
-              <strong>수수료</strong>1개월 10만원
+              <strong>수수료</strong>1업체 9만원 이상
             </li>
             <li className="p-relative">
               <strong>급여일</strong>익월 10일
@@ -49,7 +49,7 @@ function Project3(params) {
           </p>
           <div className="intro-project-cat mt-30">
             <span className="cat-item">회사 검색</span>
-            <span className="cat-item">회사 정보 수집</span>
+            <span className="cat-item">회사 결제 유도</span>
             <span className="cat-item">회사 정보 전달</span>
             <span className="cat-item">급여 수령</span>
           </div>
@@ -80,7 +80,7 @@ function Project3(params) {
     <section className="container section-margin text-center">
       <div className="p-relative">
         <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-          개발 및 단순 반복작업 비상주 외국인이 필요한 회사에게 저렴한 비용(100-200만원)으로 근로자를 매칭하는 업무
+          외국인 근로자가 필요한 기업에 외국인 인재풀의 열람권을 판매하는 업무
         </h4>
       </div>
     </section>
@@ -92,12 +92,12 @@ function Project3(params) {
               <MoveBox>
                   <TitleSection className={`align-items-start mb-30`}
                                 defaultSpace={false}>
-                      매월 10만원 x N 수익
+                      9만원 x N업체 고정 수익
                   </TitleSection>
 
 
-                  <p className="mb-10">고용과 해고가 자유로운 비상주 외국인 고용</p>
-                  <p className="mb-10">급여 예시) 10명을 6개월 비상주 계약시 600만원 수익</p>
+                  <p className="mb-10">전문인력 또는 단순인력 외국인 고용</p>
+                  <p className="mb-10">급여 예시) 일 3건, 월90명 인재풀 열람 계약시 9만원 수익</p>
 
               </MoveBox>
           </div>

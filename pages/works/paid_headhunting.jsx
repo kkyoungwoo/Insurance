@@ -92,12 +92,12 @@ function Project3(params) {
               <MoveBox>
                   <TitleSection className={`align-items-start mb-30`}
                                 defaultSpace={false}>
-                      평균 500만원 수익
+                      평균 300만원 수익
                   </TitleSection>
 
 
-                  <p className="mb-10">사업장은 외국인 연봉의 20%와 비자발급에 대한 비용 발생</p>
-                  <p className="mb-10">급여 예시) 10명을 취업 매칭시 약 5,000만원 수익</p>
+                  <p className="mb-10">사업장은 외국인 연봉의 10%와 비자발급에 대한 비용 발생</p>
+                  <p className="mb-10">급여 예시) 10명을 취업 매칭시 약 3,000만원 수익</p>
 
               </MoveBox>
           </div>

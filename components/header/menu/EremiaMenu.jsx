@@ -5,9 +5,9 @@ import Logo from "../../logo/Logo";
 
 
 const menuContent = [
-    {name: "Home", href: "/"},
-    {name: "Works", href: "/works"},
-    {name: "Contact", href: "/contact"},
+    {name: "메인페이지", href: "/"},
+    {name: "영업 인프라", href: "/works"},
+    {name: "상담 문의", href: "/contact"},
 ];
 
 const EremiaMenu = ({hamburger}) => {

@@ -3,12 +3,12 @@
 const data = [   
     {
         id: 1,
-        title: "무료 헤드헌팅",
+        title: "외국인 합법 채용 영업",
         slug: 'free_headhunting',
         src: '/img/work/free_headhunting_main.jpg',
 
         category: ['headhunting'],
-        description: '합법취업 상근 헤드헌팅 외국 일반인력',
+        description: '합법취업이 가능한 외국인 무료채용 제안',
         overlay: 4
     },
     {
@@ -18,17 +18,17 @@ const data = [
         src: '/img/work/paid_headhunting_main.jpg',
 
         category: ['headhunting'],
-        description: '합법취업 상근 헤드헌팅 외국 전문인력',
+        description: '합법취업 상근 헤드헌팅 외국인 전문인력',
         overlay: 5
     },
     {
         id: 3,
-        title: "리모트 워크",
+        title: "인재풀 열람권 판매",
         slug: 'remote_work',
         src: '/img/work/remote_work_main.jpg',
 
         category: ['headhunting'],
-        description: '비상주(비대면) 개발자 및 단순 반복작업 외국 인력',
+        description: '외국인 근로자가 필요한 기업에 외국인 인재풀의 열람권을 판매',
         overlay: 3
     },
     {

@@ -19,15 +19,15 @@ const TestimonialDetails = [
     },
     {
         name: "Cost",
-        label: "정부지원사업 합격",
+        label: "대학교 비자 강의",
         src: "/img/team/cost.jpg",
-        description: `"정부지원 사업을 통해 사업비를 확보, 자본금과 지원금으로 플랫폼 개발비 2억 이상 투자하여 개발"`
+        description: `"대학교에 강의활동을 하면서 외국인 취업이 법적으로 문제가 없도록 지속적인 지원"`
     },
     {
         name: "Venture",
-        label: "소셜벤처기업 인증",
+        label: "벤처기업 인증",
         src: "/img/team/venture.jpg",
-        description: `"워크비자의 비즈니스 모델은 미래유망산업으로 소셜벤처기업으로 인증받았습니다."`
+        description: `"워크비자의 비즈니스 모델은 미래유망산업으로 벤처기업으로 인증"`
     },
 ]
 

@@ -16,7 +16,7 @@ function InfoBox({className}) {
                 </li>
                 <li>
                     <h5 className="title-block mb-15">Address</h5>
-                    <p className="text-p">경상북도<br /> 칠곡군 지천면 상납2길 11-5</p>
+                    <p className="text-p">대구광역시 동구 장등로 76 대구콘텐츠기업지원센터 302호</p>
                 </li>
                 <li>
                     <h5 className="title-block mb-15">Follow Us</h5>
