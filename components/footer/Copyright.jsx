@@ -21,7 +21,7 @@ function Copyright({className, ...restProps}) {
                 <span style={{marginLeft:"10px"}}>대표 : 고경우</span>
             </h5>
             <h5>
-                <span style={{marginLeft:"10px", cursor: "pointer"}} onClick={copyEmail}>E-mail : workvisa@naver.com</span>
+                <span style={{marginLeft:"10px", cursor: "pointer"}} onClick={copyEmail}>E-mail : workvisahr@naver.com</span>
             </h5>
             <h5>
                 <a href="tel:010-4242-3088" style={{marginLeft:"10px"}}>phone : 010-4242-3088</a>

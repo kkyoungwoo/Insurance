@@ -23,13 +23,6 @@ function InfoBox({className}) {
                     <h5 className="title-block mb-15">Address</h5>
                     <p className="text-p">대구광역시 동구 장등로 76 대구콘텐츠기업지원센터 302호</p>
                 </li>
-                <li>
-                    <h5 className="title-block mb-15">Follow Us</h5>
-                    <div className="social-item over-hidden">
-                        <a className="link-hover" data-hover-text="kakaoTalk Message" href="http://pf.kakao.com/_qiXpxj"
-                           target="_blank" rel="nofollow">카카오톡 문의하기</a>
-                    </div>
-                </li>
             </ul>
         </div>
     );

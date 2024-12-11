@@ -89,18 +89,30 @@ function ContactForm({ className }) {
                     </div>
 
                     <div className="form-group">
-                        <div className="entry-box">
-                            <label>전화번호</label>
-                            <input
-                                id="phone"
-                                type="number"
-                                name="phone"
-                                placeholder="전화번호를 입력하세요"
-                                required
-                                value={phone}
-                                onChange={(e) => setPhone(e.target.value)}
-                            />
-                        </div>
+                    <div className="entry-box">
+                        <label>전화번호</label>
+                        <input
+                            id="phone"
+                            type="text"
+                            name="phone"
+                            placeholder="전화번호를 입력하세요"
+                            required
+                            value={phone}
+                            onChange={(e) => {
+                                const value = e.target.value.replace(/\D/g, ''); // 숫자만 추출
+                                let formattedValue = value;
+                            
+                                if (value.length > 3 && value.length <= 7) {
+                                    formattedValue = `${value.slice(0, 3)}-${value.slice(3)}`;
+                                } else if (value.length > 7) {
+                                    formattedValue = `${value.slice(0, 3)}-${value.slice(3, 7)}-${value.slice(7, 11)}`;
+                                }
+                            
+                                setPhone(formattedValue);
+                            }}
+                            maxLength={13} // 최대 길이 설정 (010-1234-5678)
+                        />
+                    </div>
                     </div>
 
                     <div className="form-group">
@@ -164,37 +176,39 @@ function ContactForm({ className }) {
             </form>
 
             <style jsx>{`
-                .form input, .form textarea {
-                    background: #f9f9f9;
-                    border: 1px solid #ddd;
-                    border-radius: 8px;
-                    padding: 10px 15px;
-                    font-size: 16px;
-                    transition: all 0.3s ease;
-                    margin-bottom: 15px;
-                }
+    .form input, .form textarea {
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px 15px;
+        font-size: 16px;
+        color: #000 !important; /* 텍스트 색상 강제 적용 */
+        transition: all 0.3s ease;
+        margin-bottom: 15px;
+    }
 
-                .form input:focus, .form textarea:focus {
-                    border-color: #4caf50;
-                    box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
-                }
+    .form input:focus, .form textarea:focus {
+        border-color: #4caf50;
+        box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+    }
 
-                .form textarea {
-                    resize: none;
-                }
+    .form textarea {
+        resize: none;
+    }
 
-                .dsn-button .text-button {
-                    color: #fff;
-                    background: #4caf50;
-                    padding: 10px 20px;
-                    border-radius: 5px;
-                    transition: all 0.3s ease;
-                }
+    .dsn-button .text-button {
+        color: #fff;
+        background: #4caf50;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
 
-                .dsn-button .text-button:hover {
-                    background: #45a049;
-                }
-            `}</style>
+    .dsn-button .text-button:hover {
+        background: #45a049;
+    }
+`}</style>
+
         </div>
     );
 }
