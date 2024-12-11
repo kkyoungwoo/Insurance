@@ -37,7 +37,7 @@ function About() {
             <Map
                 mapKey="AIzaSyDMyAS2jdzj-vdgBIFaIStYOWJtSlghndg"
                 zoom={10}
-                height="50vh"
+                height="30vh"
                 defaultCenter={{lat: 35.874233, lng: 128.624291}}
             />
 

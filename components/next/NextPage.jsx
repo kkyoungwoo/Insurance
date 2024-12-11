@@ -8,9 +8,9 @@ const NextContent = {
 
 const NextContent2 = {
     title: "블루오션, 영업 팀원 모집",
-    subtitle: `시작부터 수익이 발생할 수 있는 인프라부터 제공합니다`,
-    buttonText: "영업 상담",
-    Text: "영업 상담"
+    subtitle: `신입도 빠르게 수익 발생 가능`,
+    buttonText: "상담 신청하기",
+    Text: "상담 신청하기"
 };
 
 function NextPage({className, ...restProps}) {
