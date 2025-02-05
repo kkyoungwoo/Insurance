@@ -69,7 +69,7 @@ function Home() {
                         외국인 인재풀 제공 영업을 진행합니다
                     </p>
                     <p className=" mb-30">
-                        하루 한건으로 90,000원의 수익이 발생됩니다
+                        하루 한건으로 225,000원의 수익이 발생됩니다
                     </p>
 
                     <Button href={"https://workvisa.co.kr"} target="_blank" rel="noopener noreferrer">
