@@ -8,7 +8,7 @@ const data = [
         src: '/img/work/free_headhunting_main.jpg',
 
         category: ['headhunting'],
-        description: '합법취업이 가능한 외국인 무료채용 제안',
+        description: '합법취업이 가능한 외국인 채용 제안',
         overlay: 4
     },
     {

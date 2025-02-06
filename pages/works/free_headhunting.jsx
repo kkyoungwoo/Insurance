@@ -28,10 +28,10 @@ function Project3(params) {
             <h4 className="title-block text-uppercase mb-20">info</h4>
             <ul className="intro-project-list">
               <li className="p-relative">
-                <strong>업무</strong>외국인 합법취업이 가능한 회사 모집
+                <strong>업무</strong>외국인 합법취업을 필요로하는 회사 모집
               </li>
               <li className="p-relative">
-                <strong>수수료</strong>매칭당 22만5천원
+                <strong>수수료</strong>매칭당 225,000천원
               </li>
               <li className="p-relative">
                 <strong>급여일</strong>익월 10일
@@ -44,9 +44,9 @@ function Project3(params) {
               업무절차는 아래와 같습니다
             </p>
             <div className="intro-project-cat mt-30">
-              <span className="cat-item">회사 검색</span>
-              <span className="cat-item">회사 정보 수집</span>
-              <span className="cat-item">회사 정보 전달</span>
+              <span className="cat-item">회사 미팅</span>
+              <span className="cat-item">회사 구인요청서 확보</span>
+              <span className="cat-item">외국인 이력서 전달</span>
               <span className="cat-item">급여 수령</span>
             </div>
           </div>
@@ -76,7 +76,7 @@ function Project3(params) {
     <section className="container section-margin text-center">
       <div className="p-relative">
         <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-          해외영업 무역 등 해외에 관련된 업무를 하거나 용접공, 연구원등 전문인력 외국인이 필요한 사업장을 찾는 업무
+          외국인이 필요한 사업장을 찾는 업무
         </h4>
         <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
           외국인이 맞춤형 이력서 전달 서비스으로 기업에서 외국인 이력서 모집 및 비자 컨설팅 비용 납부
@@ -91,7 +91,7 @@ function Project3(params) {
               <MoveBox>
                   <TitleSection className={`align-items-start mb-30`}
                                 defaultSpace={false}>
-                      고정 22만5천천원 수익
+                      고정 225,000원 수익
                   </TitleSection>
                   <p className="mb-10">외국인 이력서를 기업에 전달</p>
                   <p className="mb-10">급여 예시) 10개 기업에 서비스 진행시 2,250,000원 수익</p>
