@@ -56,7 +56,7 @@ function Home() {
 
             {/*Start Box Info Move Content*/}
             <div className="p-relative section-margin" data-dsn-title="ALL commission">
-                <ParallaxImage src="/img/about-center.jpg" overlay={1} alt={""}/>
+            <ParallaxImage src="/img/about-center.jpg" overlay={1} alt=""/>
                 <MoveBox tablet={false}>
                     <TitleSection
                         className={`align-items-start mb-30`}
@@ -69,10 +69,7 @@ function Home() {
                     <p className="mb-10">
                         1. 기업에 방문하여 "구인요청서"와 "사업자등록증"을 받기
                     </p>
-                    <div className="mb-30">
-    <div>2. 워크비자로 "구인요청서"와 "사업자등록증" 이메일로로 전달</div>
-    <div style={{ marginBottom: "10px" }}>email : workvisahr@naver.com</div>
-</div>
+    <p>2. 워크비자로 "구인요청서"와 "사업자등록증" 이메일로로 전달</p>
                     <p className=" mb-30">
                         영업에 집중하세요, 나머지는 저희가 해결하겠습니다
                     </p>
