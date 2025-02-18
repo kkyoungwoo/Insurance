@@ -32,13 +32,13 @@ function Project3(params) {
           <h4 className="title-block text-uppercase mb-20">info</h4>
           <ul className="intro-project-list">
             <li className="p-relative">
-              <strong>업무</strong> 인재풀 열람권 판매
+              <strong>업무</strong> 인재풀 열람권 안내
             </li>
             <li className="p-relative">
-              <strong>수수료</strong>1업체 9만원 이상
+              <strong>수수료</strong>- 원
             </li>
             <li className="p-relative">
-              <strong>급여일</strong>익월 10일
+              <strong>급여일</strong>- 일
             </li>
           </ul>
         </div>
@@ -48,10 +48,9 @@ function Project3(params) {
             업무절차는 아래와 같습니다
           </p>
           <div className="intro-project-cat mt-30">
-            <span className="cat-item">회사 검색</span>
-            <span className="cat-item">회사 결제 유도</span>
-            <span className="cat-item">회사 정보 전달</span>
-            <span className="cat-item">급여 수령</span>
+            <span className="cat-item">회사 미팅</span>
+            <span className="cat-item">인재풀 무료 열람 안내</span>
+            <span className="cat-item">인재풀 열람권 결제 유도</span>
           </div>
         </div>
       </DsnGrid>
@@ -80,7 +79,7 @@ function Project3(params) {
     <section className="container section-margin text-center">
       <div className="p-relative">
         <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-          외국인 근로자가 필요한 기업에 외국인 인재풀의 열람권을 판매하는 업무
+          기업에 외국인 인재풀의 열람권을 안내하는 업무
         </h4>
       </div>
     </section>
@@ -92,12 +91,12 @@ function Project3(params) {
               <MoveBox>
                   <TitleSection className={`align-items-start mb-30`}
                                 defaultSpace={false}>
-                      9만원 x N업체 고정 수익
+                      별도의 수익은 없습니다
                   </TitleSection>
 
 
-                  <p className="mb-10">전문인력 또는 단순인력 외국인 고용</p>
-                  <p className="mb-10">급여 예시) 일 3건, 월90명 인재풀 열람 계약시 9만원 수익</p>
+                  <p className="mb-10">아르바이트 또는 단순인력 외국인 고용 가능</p>
+                  <p className="mb-10">외국인 이력서 하루 1건 무료 열람 가능 (월30건)</p>
 
               </MoveBox>
           </div>

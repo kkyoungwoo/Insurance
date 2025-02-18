@@ -3,35 +3,35 @@
 const data = [   
     {
         id: 1,
-        title: "외국인 합법 채용 영업",
+        title: "외국인 합법 고용",
         slug: 'free_headhunting',
         src: '/img/work/free_headhunting_main.jpg',
 
-        category: ['headhunting'],
-        description: '합법취업이 가능한 외국인 채용 제안',
+        category: ['Service 1'],
+        description: '합법취업이 가능한 외국인 채용 무료 컨설팅',
         overlay: 4
     },
     {
         id: 2,
-        title: "유료 헤드헌팅",
+        title: "맞춤형 이력서 전달",
         slug: 'paid_headhunting',
         src: '/img/work/paid_headhunting_main.jpg',
 
-        category: ['headhunting'],
-        description: '합법취업 상근 헤드헌팅 외국인 전문인력',
+        category: ['Service 2'],
+        description: '합법 취업이 가능한 근로희망 외국인 이력서를 제공',
         overlay: 5
     },
     {
         id: 3,
-        title: "인재풀 열람권 판매",
+        title: "외국인 이력서 무료 열람",
         slug: 'remote_work',
         src: '/img/work/remote_work_main.jpg',
 
-        category: ['headhunting'],
-        description: '외국인 근로자가 필요한 기업에 외국인 인재풀의 열람권을 판매',
+        category: ['Service 3'],
+        description: '외국인 근로자가 필요한 기업에 외국인 인재풀의 열람권을 안내',
         overlay: 3
     },
-    {
+    /*{
         id: 4,
         title: "기업 컨설팅",
         slug: 'consulting',
@@ -60,7 +60,7 @@ const data = [
         category: ['etc'],
         description: '외국인을 대상으로한 알뜰폰, 부동산 등 기타 영업툴',
         overlay: 5
-    }
+    }*/
 ]
 
 export const getPortfolioData = () => data;

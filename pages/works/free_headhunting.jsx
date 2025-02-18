@@ -28,13 +28,13 @@ function Project3(params) {
             <h4 className="title-block text-uppercase mb-20">info</h4>
             <ul className="intro-project-list">
               <li className="p-relative">
-                <strong>업무</strong>외국인 합법취업을 필요로하는 회사 모집
+                <strong>업무</strong>외국인 합법취업을 필요로하는 회사 미팅
               </li>
               <li className="p-relative">
-                <strong>수수료</strong>매칭당 225,000천원
+                <strong>수수료</strong>- 원
               </li>
               <li className="p-relative">
-                <strong>급여일</strong>익월 10일
+                <strong>급여일</strong>- 일
               </li>
             </ul>
           </div>
@@ -45,9 +45,8 @@ function Project3(params) {
             </p>
             <div className="intro-project-cat mt-30">
               <span className="cat-item">회사 미팅</span>
-              <span className="cat-item">회사 구인요청서 확보</span>
-              <span className="cat-item">외국인 이력서 전달</span>
-              <span className="cat-item">급여 수령</span>
+              <span className="cat-item">회사 구인요청서, 사업자등록증 확보</span>
+              <span className="cat-item">워크비자에 구인요청서, 사업자등록증 서류 전달</span>
             </div>
           </div>
         </DsnGrid>
@@ -76,10 +75,7 @@ function Project3(params) {
     <section className="container section-margin text-center">
       <div className="p-relative">
         <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-          외국인이 필요한 사업장을 찾는 업무
-        </h4>
-        <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-          외국인이 맞춤형 이력서 전달 서비스으로 기업에서 외국인 이력서 모집 및 비자 컨설팅 비용 납부
+          외국인이 필요한 사업장에서 미팅을 진행하는 업무
         </h4>
       </div>
     </section>
@@ -91,10 +87,10 @@ function Project3(params) {
               <MoveBox>
                   <TitleSection className={`align-items-start mb-30`}
                                 defaultSpace={false}>
-                      고정 225,000원 수익
+                      워크비자에서 진행하는 업무
                   </TitleSection>
-                  <p className="mb-10">외국인 이력서를 기업에 전달</p>
-                  <p className="mb-10">급여 예시) 10개 기업에 서비스 진행시 2,250,000원 수익</p>
+                  <p className="mb-10">1. 외국인 합법취업 가능성 확인</p>
+                  <p className="mb-10">2. 외국인 이력서를 기업에 전달</p>
 
               </MoveBox>
           </div>

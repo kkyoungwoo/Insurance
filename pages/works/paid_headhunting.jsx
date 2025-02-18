@@ -32,13 +32,13 @@ function Project3(params) {
           <h4 className="title-block text-uppercase mb-20">info</h4>
           <ul className="intro-project-list">
             <li className="p-relative">
-              <strong>업무</strong>외국인 합법취업이 가능한 회사 모집
+              <strong>업무</strong>외국인 합법취업이 가능한 회사 미팅
             </li>
             <li className="p-relative">
-              <strong>수수료</strong>매칭당 구직자 연봉의 10%
+              <strong>수수료</strong>맞춤형 이력서 모집의 50% 수수료
             </li>
             <li className="p-relative">
-              <strong>급여일</strong>익월 10일
+              <strong>급여일</strong>취업확정 후 익월 10일
             </li>
           </ul>
         </div>
@@ -48,10 +48,10 @@ function Project3(params) {
             업무절차는 아래와 같습니다
           </p>
           <div className="intro-project-cat mt-30">
-            <span className="cat-item">회사 검색</span>
-            <span className="cat-item">회사 정보 수집</span>
-            <span className="cat-item">회사 정보 전달</span>
-            <span className="cat-item">급여 수령</span>
+            <span className="cat-item">회사 미팅</span>
+              <span className="cat-item">회사 구인요청서, 사업자등록증 확보</span>
+              <span className="cat-item">워크비자에 구인요청서, 사업자등록증 서류 전달</span>
+            <span className="cat-item">취업 확정 후 수수료 지급</span>
           </div>
         </div>
       </DsnGrid>
@@ -80,7 +80,7 @@ function Project3(params) {
     <section className="container section-margin text-center">
       <div className="p-relative">
         <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-          개발자, 관리자, 연구원 등 기술을 가지고있는 전문인력을 채용해야하는 사업자를 찾는 업무
+          인구감소 지역 또는 고용허가서가 있는 기업에 맞춤형 이력서 전달 영업
         </h4>
       </div>
     </section>
@@ -92,12 +92,12 @@ function Project3(params) {
               <MoveBox>
                   <TitleSection className={`align-items-start mb-30`}
                                 defaultSpace={false}>
-                      평균 300만원 수익
+                      1건당 45,000원 수익
                   </TitleSection>
 
 
-                  <p className="mb-10">사업장은 외국인 연봉의 10%와 비자발급에 대한 비용 발생</p>
-                  <p className="mb-10">급여 예시) 10명을 취업 매칭시 약 3,000만원 수익</p>
+                  <p className="mb-10">사업장은 건당 9만원의 이력서 확보 비용 발생</p>
+                  <p className="mb-10">최소 구매수량 5개</p>
 
               </MoveBox>
           </div>
