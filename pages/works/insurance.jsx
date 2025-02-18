@@ -80,7 +80,7 @@ function Project3(params) {
     <section className="container section-margin text-center">
       <div className="p-relative">
         <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-          지인영업, 기업영업, DB영업 등으로 보험사에서 책정된 수수료를 지급받는 업무, 워크비자 업계 최고 수수료 보유
+        서비스 준비중입니다
         </h4>
       </div>
     </section>
@@ -96,8 +96,7 @@ function Project3(params) {
                   </TitleSection>
 
 
-                  <p className="mb-10">계약 1건당 평균 100만원 수익</p>
-                  <p className="mb-10">급여 예시) 10명 보험 계약시 약 1,000만원 수익</p>
+                  <p className="mb-10">서비스 준비중입니다</p>
 
               </MoveBox>
           </div>

@@ -27,7 +27,7 @@ function Home() {
     return (
         <Layout modelRight={{children: <ModalContact/>, propsModal: {textBtn: "Contact"}}}>
             <Head>
-                <title>영업크루 모집 | WORK VISA</title>
+                <title>기업 영업 방법 | WORK VISA</title>
             </Head>
             <SliderPortfolio
                 webgel
@@ -47,7 +47,7 @@ function Home() {
                 <TitleSection
                     className="align-items-center text-center"
                     description={"- problem solver"}
-                >고객의 니즈와 <br/> 워크비자 솔루션
+                >대화에 주도권이 있습니다<br/>
                 </TitleSection>
                 <ServiceOne/>
             </div>
@@ -59,26 +59,78 @@ function Home() {
                 <MoveBox tablet={false}>
                     <TitleSection
                         className={`align-items-start mb-30`}
-                        description={"Highest Commission Offered"}
+                        description={"How to Create and Use a DB"}
                         defaultSpace={false}
                     >
-                        처음 하게되는 일은?
+                        영업이 참 쉽습니다
                     </TitleSection>
 
                     <p className="mb-10">
-                        외국인 인재풀 제공 영업을 진행합니다
+                        1. 기업에 방문하여 "구인요청서"와 "사업자등록증"을 받기
                     </p>
                     <p className=" mb-30">
-                        하루 한건으로 225,000원의 수익이 발생됩니다
+                        2. 워크비자로 "구인요청서"와 "사업자등록증" 이메일로로 전달
+                        <div style={{ marginBottom:"10px" }} >email : workvisahr@naver.com</div>
+                    </p>
+                    <p className=" mb-30">
+                        영업에 집중하세요, 나머지는 저희가 해결하겠습니다
                     </p>
 
-                    <Button href={"https://workvisa.co.kr"} target="_blank" rel="noopener noreferrer">
-                        외국인 구인구직 플랫폼 <span>⟶</span>
-                    </Button>
+                    <div style={{ display: 'flex', justifyContent: 'flex-start', gap: '20px', flexWrap: 'wrap', marginBottom: '30px' }}>
+    <Button 
+        href="../구인요청서.hwp" 
+        style={{
+            padding: '10px 20px',
+            fontSize: '16px',
+            backgroundColor: '#4CAF50',
+            color: 'white',
+            border: 'none',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            textAlign: 'center',
+        }} 
+        target="_blank" 
+        rel="noopener noreferrer">
+        구인요청서 HWP 다운로드
+    </Button>
 
-                    <p className={`sm-p mt-15 theme-color`}>
-                        ↑ 메인 홈페이지
-                    </p>
+    <Button 
+        href="../구인요청서.pdf" 
+        style={{
+            padding: '10px 20px',
+            fontSize: '16px',
+            backgroundColor: '#007BFF',
+            color: 'white',
+            border: 'none',
+            borderRadius: '5px',
+            cursor: 'pointer',
+            textAlign: 'center',
+        }} 
+        target="_blank" 
+        rel="noopener noreferrer">
+        구인요청서 PDF 다운로드
+    </Button>
+</div>
+
+                    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4" >
+                      <div className="max-w-2xl w-full bg-gray-800 p-8 rounded-2xl shadow-lg">
+                        <h2 style={{ fontSize: "20px",marginBottom:"10px" }} className="mb-4">
+                          DB 제작 과정 영상
+                        </h2>
+                        <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
+                          <iframe
+                            className="w-full h-full"
+                            src="https://www.youtube-nocookie.com/embed/w9hilORl76k?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
+                            title="YouTube Video"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+
+
                 </MoveBox>
             </div>
             {/*End Box Info Move Content*/}
@@ -90,7 +142,7 @@ function Home() {
                     className={`container align-items-center text-center`}
                     description={"commission List"}
                 >
-                    영업 인프라 제공 가능<br/>
+                    영업 아이템 설명<br/>
                 </TitleSection>
                 <PortfolioSwiper
                     grabCursor

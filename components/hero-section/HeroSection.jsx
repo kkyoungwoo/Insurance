@@ -8,19 +8,19 @@ import FadeUpTrigger from "../../animation/FadeUpTrigger";
 
 
 const HeroContent = {
-    title: "부가 수익이 당신을 기다리고 있습니다",
-    subtitle: `워크비자 영업은 바로 시작할 수 있습니다 `,
+    title: "기업이 당신을 기다리고 있습니다",
+    subtitle: `워크비자는 외국인 합법 채용 기업DB를 생산합니다 `,
     description: `1. 저출산 문제로 중소기업에 인력난 발생<span class="mb-10 d-block" ></span>
-    2. 외국인 합법 구인구직으로 인력난 해결<span class="mb-10 d-block" ></span>
-    3. 지속가능한 부가수익 발생<span class="mb-10 d-block" ></span>`,
-    authorTitle: "체계적으로 제공되는 인프라",
-    authorJob: "DB, Semina, VOD, E-Book, On-boarding",
-    experienceNumber: "5",
-    experienceDescription: `인프라 제공`,
+    2. 외국인 합법 채용으로 중소기업에 인력난 해결<span class="mb-10 d-block" ></span>
+    3. 자유로운 추가 영업 진행<span class="mb-10 d-block" ></span>`,
+    authorTitle: "DB 구매 정보",
+    authorJob: "단순변심, 부재건 A/S 가능",
+    experienceNumber: "WORKVISA의",
+    experienceDescription: `매력적인 인프라`,
     heroImage: '/img/about-intro.jpg',
     awards: [
-        {number: 1, description: `Day<br/>교육`},
-        {number: 5, description: `+ α<br/>수익구조 (신입은 1개만 가능)`},
+        {number: 1, description: `건`},
+        {number: 5, description: `만원(VAT 별도)`},
     ]
 };
 
@@ -81,7 +81,7 @@ function HeroSection({className, ...restProps}) {
                             className="box-awards-item p-absolute big-number v-dark-head left-0 bottom-0 ml-40 mb-40 z-index-1 border-style">
                             <h5 className="number p-20">
                                     <span className="has-animate-number title"
-                                          style={{fontSize: "145px", lineHeight: "120px"}}>
+                                          style={{fontSize: "14px", lineHeight: "40px"}}>
                                         {HeroContent.experienceNumber}
                                     </span>
                                 {HeroContent.experienceDescription && <span className="sm-title-block d-block" dangerouslySetInnerHTML={{__html : HeroContent.experienceDescription}} />}

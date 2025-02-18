@@ -7,8 +7,8 @@ const NextContent = {
 };
 
 const NextContent2 = {
-    title: "블루오션, 영업 팀원 모집",
-    subtitle: `신입도 빠르게 수익 발생 가능`,
+    title: "DB 구매 상담하기",
+    subtitle: `신입도 쉽게 기업과 미팅 가능`,
     buttonText: "상담 신청하기",
     Text: "상담 신청하기"
 };

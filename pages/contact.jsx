@@ -19,7 +19,7 @@ function About() {
     return (
         <Layout>
             <Head>
-                <title>영업 문의하기 | WORK VISA</title>
+                <title>DB구매 문의하기 | WORK VISA</title>
             </Head>
             {/*========== Header Normal ========== */}
             <HeaderNormal className="text-center">
@@ -27,9 +27,9 @@ function About() {
                     <span className="pl-10 pr-10 background-section">WORK VISA COMPANY</span>
                 </p>
                 <h1 className="title text-uppercase">
-                    지금 합류하세요
+                    기업 영업 가능합니다
                 </h1>
-                <p className="dsn-heading-title mt-15 max-w570">워크비자는 지금 이 시간에도 달리고 있습니다
+                <p className="dsn-heading-title mt-15 max-w570">지금 이 시간에도 기업은 외국인을 채용하고 있습니다
                 </p>
             </HeaderNormal>
             {/*========== End Header Normal ==========*/}

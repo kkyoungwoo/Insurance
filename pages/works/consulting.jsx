@@ -80,7 +80,7 @@ function Project3(params) {
     <section className="container section-margin text-center">
       <div className="p-relative">
         <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-          외국인 구인구직 서비스를 제공으로 접근하여 기업의 문제를 찾고 전문 컨설턴트를 연결하는 업무
+          서비스 준비중입니다
         </h4>
       </div>
     </section>
@@ -95,8 +95,7 @@ function Project3(params) {
                       평균 1,000만원 수익
                   </TitleSection>
 
-                  <p className="mb-10">워크비자 직속 보험 설계사는 기업영업 DB 제공</p>
-                  <p className="mb-10">급여 예시) 10개 기업 컨설팅 성공시 약 1억 수익</p>
+                  <p className="mb-10">서비스 준비중입니다</p>
 
               </MoveBox>
           </div>
