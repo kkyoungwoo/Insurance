@@ -1,3 +1,4 @@
+
 import React from "react";
 import Layout from "../layout/Layout";
 import SliderPortfolio from "../components/slider-portfolio/SliderPortfolio";
@@ -27,7 +28,7 @@ function Home() {
     return (
         <Layout modelRight={{children: <ModalContact/>, propsModal: {textBtn: "Contact"}}}>
             <Head>
-                <title>기업 영업 방법 | WORK VISA</title>
+                <title>기업 DB 판매 | WORK VISA</title>
             </Head>
             <SliderPortfolio
                 webgel
@@ -68,10 +69,10 @@ function Home() {
                     <p className="mb-10">
                         1. 기업에 방문하여 "구인요청서"와 "사업자등록증"을 받기
                     </p>
-                    <p className=" mb-30">
-                        2. 워크비자로 "구인요청서"와 "사업자등록증" 이메일로로 전달
-                        <div style={{ marginBottom:"10px" }} >email : workvisahr@naver.com</div>
-                    </p>
+                    <div className="mb-30">
+    <div>2. 워크비자로 "구인요청서"와 "사업자등록증" 이메일로로 전달</div>
+    <div style={{ marginBottom: "10px" }}>email : workvisahr@naver.com</div>
+</div>
                     <p className=" mb-30">
                         영업에 집중하세요, 나머지는 저희가 해결하겠습니다
                     </p>
