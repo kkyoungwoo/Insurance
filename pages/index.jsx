@@ -47,7 +47,7 @@ function Home() {
             <div className="container section-margin" data-dsn-title="problem solver">
                 <TitleSection
                     className="align-items-center text-center"
-                    description={"- problem solver"}
+                    description={"워크비자 DB는"}
                 >
                     대화에 주도권이 있습니다<br />
                 </TitleSection>
@@ -61,10 +61,10 @@ function Home() {
                 <MoveBox tablet={false}>
                     <TitleSection
                         className="align-items-start mb-30"
-                        description={"How to Create and Use a DB"}
+                        description={"워크비자 DB는"}
                         defaultSpace={false}
                     >
-                        영업이 참 쉽습니다
+                        기업 영업이 참 쉽습니다
                     </TitleSection>
 
                     <p className="mb-20">
@@ -77,7 +77,7 @@ function Home() {
                         email : workvisahr@naver.com
                     </p>
                     <p className="mb-30">
-                        기업은 우리를 통해 무료로 외국인 합법취업 컨설팅, 유료로 외국인 이력서를 받을 수 있습니다.
+                        기업은 저희를 통해 무료로 외국인 합법취업 컨설팅, 유료로 외국인 이력서를 받을 수 있습니다.
                     </p>
                     <p className="mb-30">
                         영업에 집중하세요, 나머지는 저희가 해결하겠습니다
@@ -132,7 +132,7 @@ function Home() {
                     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4">
                         <div className="max-w-2xl w-full bg-gray-800 p-8 rounded-2xl shadow-lg">
                             <h2 style={{ fontSize: "20px", marginBottom: "10px" }} className="mb-4">
-                                외국인 전문 상담 TM 샘플
+                                외국인 DB 제작과정(심화화)
                             </h2>
                             <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
                                 <iframe
