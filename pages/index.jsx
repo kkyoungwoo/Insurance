@@ -67,11 +67,17 @@ function Home() {
                         영업이 참 쉽습니다
                     </TitleSection>
 
-                    <p className="mb-10">
+                    <p className="mb-20">
                         1. 기업에 방문하여 "구인요청서"와 "사업자등록증"을 받기
                     </p>
                     <p>
                         2. 워크비자로 "구인요청서"와 "사업자등록증"을 이메일로 전달
+                    </p>
+                    <p className="mb-30">
+                        email : workvisahr@naver.com
+                    </p>
+                    <p className="mb-30">
+                        기업은 우리를 통해 무료로 외국인 합법취업 컨설팅, 유료로 외국인 이력서를 받을 수 있습니다.
                     </p>
                     <p className="mb-30">
                         영업에 집중하세요, 나머지는 저희가 해결하겠습니다

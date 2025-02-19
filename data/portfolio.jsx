@@ -8,7 +8,7 @@ const data = [
         src: '/img/work/free_headhunting_main.jpg',
 
         category: ['Service 1'],
-        description: '합법취업이 가능한 외국인 채용 무료 컨설팅',
+        description: '합법취업이 가능한 외국인 고용 무료 지원',
         overlay: 4
     },
     {

@@ -15,9 +15,9 @@ import Button from "../../components/button/Button";
 
 function Project3(params) {
   // "remote_work" 데이터가 없으면 빈 객체를 사용
-  const heroData = getPortfolioItem("remote_work") || {};
+  const heroData = getPortfolioItem("free_headhunting") || {};
   // "consulting" 데이터가 없으면 기본 URL(slug)을 가진 객체를 사용하여 NextProject 오류 방지
-  const consultingData = getPortfolioItem("consulting") || { slug: "/" };
+  const free_headhunting = getPortfolioItem("free_headhunting") || { slug: "/" };
 
   return (
     <Layout>
@@ -106,7 +106,7 @@ function Project3(params) {
       <NextPage className="background-section section-padding" />
       {/* ========== End Next Page Section ========== */}
 
-      <NextProject heroContent={consultingData} number={4} />
+      <NextProject heroContent={free_headhunting} number={1} />
     </Layout>
   );
 }
