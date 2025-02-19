@@ -30,6 +30,7 @@ function Home() {
             <Head>
                 <title>기업 DB 판매 | WORK VISA</title>
             </Head>
+            {/* eslint-disable react/no-unescaped-entities */}
             <SliderPortfolio
                 webgel
                 fullWidth
@@ -188,6 +189,7 @@ function Home() {
             {/*========== Footer ==========*/}
             <Footer className="background-section"/>
             {/*========== End Footer ==========*/}
+            {/* eslint-enable react/no-unescaped-entities */}
         </Layout>
     );
 }
