@@ -1,4 +1,3 @@
-
 import React from "react";
 import Layout from "../layout/Layout";
 import SliderPortfolio from "../components/slider-portfolio/SliderPortfolio";
@@ -11,22 +10,20 @@ import Button from "../components/button/Button";
 import PortfolioSwiper from "../components/portfolio/PortfolioSwiper";
 import SwiperPagination from "../components/swiper-pagination/SwiperPagination";
 import Testimonial from "../components/testimonial/Testimonial";
-
 import NextPage from "../components/next/NextPage";
 import Footer from "../components/footer/Footer";
 import ModalContact from "../components/model-right/ModalContact";
 import Head from "next/head";
 
+// 기본 defaultProps 설정 (TitleSection 컴포넌트에 적용)
+TitleSection.defaultProps = {
+    classDesc: "line-shape line-shape-before",
+    classDesInner: "line-bg-right",
+};
 
 function Home() {
-    TitleSection.defaultProps = {
-        classDesc: "line-shape line-shape-before",
-        classDesInner: "line-bg-right",
-    };
-
-
     return (
-        <Layout modelRight={{children: <ModalContact/>, propsModal: {textBtn: "Contact"}}}>
+        <Layout modelRight={{ children: <ModalContact />, propsModal: { textBtn: "Contact" } }}>
             <Head>
                 <title>기업 DB 판매 | WORK VISA</title>
             </Head>
@@ -39,28 +36,31 @@ function Home() {
                     displacement: "/img/displacement/8.jpg",
                     speedIn: 1,
                 }}
-                metaData={{hasSeparator: true}}
+                metaData={{ hasSeparator: true }}
             />
-            <HeroSection className="container section-margin container fill-right-container"
-                         data-dsn-title="How We Are"/>
+            <HeroSection
+                className="container section-margin container fill-right-container"
+                data-dsn-title="How We Are"
+            />
 
-            {/*Start Service*/}
+            {/* Start Service */}
             <div className="container section-margin" data-dsn-title="problem solver">
                 <TitleSection
                     className="align-items-center text-center"
                     description={"- problem solver"}
-                >대화에 주도권이 있습니다<br/>
+                >
+                    대화에 주도권이 있습니다<br />
                 </TitleSection>
-                <ServiceOne/>
+                <ServiceOne />
             </div>
-            {/*End Service*/}
+            {/* End Service */}
 
-            {/*Start Box Info Move Content*/}
+            {/* Start Box Info Move Content */}
             <div className="p-relative section-margin" data-dsn-title="ALL commission">
-            <ParallaxImage src="/img/about-center.jpg" alt="."/>
+                <ParallaxImage src="/img/about-center.jpg" alt="About Center" />
                 <MoveBox tablet={false}>
                     <TitleSection
-                        className={`align-items-start mb-30`}
+                        className="align-items-start mb-30"
                         description={"How to Create and Use a DB"}
                         defaultSpace={false}
                     >
@@ -70,84 +70,93 @@ function Home() {
                     <p className="mb-10">
                         1. 기업에 방문하여 "구인요청서"와 "사업자등록증"을 받기
                     </p>
-    <p>2. 워크비자로 "구인요청서"와 "사업자등록증" 이메일로로 전달</p>
-                    <p className=" mb-30">
+                    <p>
+                        2. 워크비자로 "구인요청서"와 "사업자등록증"을 이메일로 전달
+                    </p>
+                    <p className="mb-30">
                         영업에 집중하세요, 나머지는 저희가 해결하겠습니다
                     </p>
 
-                    <div style={{ display: 'flex', justifyContent: 'flex-start', gap: '20px', flexWrap: 'wrap', marginBottom: '30px' }}>
-    <Button 
-        href="../구인요청서.hwp" 
-        style={{
-            padding: '10px 20px',
-            fontSize: '16px',
-            backgroundColor: '#4CAF50',
-            color: 'white',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer',
-            textAlign: 'center',
-        }} 
-        target="_blank" 
-        rel="noopener noreferrer">
-        구인요청서 HWP 다운로드
-    </Button>
+                    <div
+                        style={{
+                            display: "flex",
+                            justifyContent: "flex-start",
+                            gap: "20px",
+                            flexWrap: "wrap",
+                            marginBottom: "30px",
+                        }}
+                    >
+                        <Button
+                            href="../구인요청서.hwp"
+                            style={{
+                                padding: "10px 20px",
+                                fontSize: "16px",
+                                backgroundColor: "#4CAF50",
+                                color: "white",
+                                border: "none",
+                                borderRadius: "5px",
+                                cursor: "pointer",
+                                textAlign: "center",
+                            }}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            구인요청서 HWP 다운로드
+                        </Button>
 
-    <Button 
-        href="../구인요청서.pdf" 
-        style={{
-            padding: '10px 20px',
-            fontSize: '16px',
-            backgroundColor: '#007BFF',
-            color: 'white',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer',
-            textAlign: 'center',
-        }} 
-        target="_blank" 
-        rel="noopener noreferrer">
-        구인요청서 PDF 다운로드
-    </Button>
-</div>
-
-                    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4" >
-                      <div className="max-w-2xl w-full bg-gray-800 p-8 rounded-2xl shadow-lg">
-                        <h2 style={{ fontSize: "20px",marginBottom:"10px" }} className="mb-4">
-                          DB 제작 과정 영상
-                        </h2>
-                        <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
-                          <iframe
-                            className="w-full h-full"
-                            src="https://www.youtube-nocookie.com/embed/w9hilORl76k?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
-                            title="YouTube Video"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                          ></iframe>
-                        </div>
-                      </div>
+                        <Button
+                            href="../구인요청서.pdf"
+                            style={{
+                                padding: "10px 20px",
+                                fontSize: "16px",
+                                backgroundColor: "#007BFF",
+                                color: "white",
+                                border: "none",
+                                borderRadius: "5px",
+                                cursor: "pointer",
+                                textAlign: "center",
+                            }}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            구인요청서 PDF 다운로드
+                        </Button>
                     </div>
 
-
+                    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4">
+                        <div className="max-w-2xl w-full bg-gray-800 p-8 rounded-2xl shadow-lg">
+                            <h2 style={{ fontSize: "20px", marginBottom: "10px" }} className="mb-4">
+                                외국인 전문 상담 TM 샘플
+                            </h2>
+                            <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
+                                <iframe
+                                    className="w-full h-full"
+                                    src="https://www.youtube-nocookie.com/embed/w9hilORl76k?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
+                                    title="YouTube Video"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </MoveBox>
             </div>
-            {/*End Box Info Move Content*/}
+            {/* End Box Info Move Content */}
 
-
-            {/*Start Portfolio*/}
+            {/* Start Portfolio */}
             <div className="section-margin" data-dsn-title="commission List">
                 <TitleSection
-                    className={`container align-items-center text-center`}
+                    className="container align-items-center text-center"
                     description={"commission List"}
                 >
-                    영업 아이템 설명<br/>
+                    영업 아이템 설명<br />
                 </TitleSection>
                 <PortfolioSwiper
                     grabCursor
-                    desktop={{spaceBetween: 50, slidesPerView: 1.5}}
-                    tablet={{spaceBetween: 0, slidesPerView: 1.3}}
-                    mobile={{slidesPerView: 1}}
+                    desktop={{ spaceBetween: 50, slidesPerView: 1.5 }}
+                    tablet={{ spaceBetween: 0, slidesPerView: 1.3 }}
+                    mobile={{ slidesPerView: 1 }}
                     stylePortfolio="work-section"
                     className="text-left v-dark-head title-inherit h4"
                     centeredSlides
@@ -157,38 +166,43 @@ function Home() {
                     speed={1200}
                     watchSlidesProgress
                     loopedSlides={2}
-                    parallaxImage={{"data-swiper-parallax-scale": "0.85"}}
-                    parallaxContent={{"data-swiper-parallax-opacity": "0"}}
+                    parallaxImage={{ "data-swiper-parallax-scale": "0.85" }}
+                    parallaxContent={{ "data-swiper-parallax-opacity": "0" }}
                 >
-                    <SwiperPagination
-                        className={`justify-content-between dsn-container mt-30`}
-                    />
+                    <SwiperPagination className="justify-content-between dsn-container mt-30" />
                 </PortfolioSwiper>
             </div>
-            {/*End Portfolio*/}
+            {/* End Portfolio */}
 
-            {/*Start testimonial Section*/}
+            {/* Start Testimonial Section */}
             <div className="section-margin" data-dsn-title="Company history">
-                <Testimonial className="container section-margin" title="Company history"
-                             skin={["Company history"]}
-                             backgroundColor={"background-section"}
-                             desktop={{slidesPerView: 2}}
-                             mobile={{slidesPerView: 1}}
-                             speed={1000} grabCursor loop loopedSlides={2}
-                             parallax parallaxImage={{"data-swiper-parallax-scale": 0.7}}
-                             parallaxContent={{"data-swiper-parallax-opacity": 0, "data-swiper-parallax": "30%"}}
+                <Testimonial
+                    className="container section-margin"
+                    title="Company history"
+                    skin={["Company history"]}
+                    backgroundColor="background-section"
+                    desktop={{ slidesPerView: 2 }}
+                    mobile={{ slidesPerView: 1 }}
+                    speed={1000}
+                    grabCursor
+                    loop
+                    loopedSlides={2}
+                    parallax
+                    parallaxImage={{ "data-swiper-parallax-scale": 0.7 }}
+                    parallaxContent={{ "data-swiper-parallax-opacity": 0, "data-swiper-parallax": "30%" }}
                 >
-                    <SwiperPagination className={`justify-content-between dsn-container mt-30`}/>
+                    <SwiperPagination className="justify-content-between dsn-container mt-30" />
                 </Testimonial>
             </div>
+            {/* End Testimonial Section */}
 
-            {/*========== Next Page ==========*/}
-            <NextPage className="section-padding border-top background-section"/>
-            {/*========== End Next Page ==========*/}
+            {/* ========== Next Page ========== */}
+            <NextPage className="section-padding border-top background-section" />
+            {/* ========== End Next Page ========== */}r
 
-            {/*========== Footer ==========*/}
-            <Footer className="background-section"/>
-            {/*========== End Footer ==========*/}
+            {/* ========== Footer ========== */}
+            <Footer className="background-section" />
+            {/* ========== End Footer ========== */}
             {/* eslint-enable react/no-unescaped-entities */}
         </Layout>
     );
