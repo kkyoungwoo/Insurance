@@ -18,7 +18,9 @@ import Button from "../../components/button/Button";
 
 
 function Project3(params) {
-  const heroData = getPortfolioItem('paid_headhunting');
+  const heroData = getPortfolioItem("paid_headhunting") || {};
+
+
   return (
     <Layout>
       <HeaderFull className="dsn-container"

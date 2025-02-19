@@ -18,7 +18,8 @@ import Button from "../../components/button/Button";
 
 
 function Project3(params) {
-  const heroData = getPortfolioItem('remote_work');
+  const heroData = getPortfolioItem("remote_work") || {};
+
   return (
     <Layout>
       <HeaderFull className="dsn-container"

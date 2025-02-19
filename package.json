@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next build && next export",
-    "lint": "next lint"
+    "lint": "next lint --quiet"
   },
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
