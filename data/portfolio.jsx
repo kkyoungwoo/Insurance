@@ -3,11 +3,11 @@
 const data = [   
     {
         id: 1,
-        title: "외국인 합법 고용",
+        title: "외국인 고용 DB",
         slug: 'free_headhunting',
         src: '/img/work/free_headhunting_main.jpg',
 
-        category: ['Service 1'],
+        category: ['보험 DB (기업 영업)'],
         description: '합법취업이 가능한 외국인 고용 무료 지원',
         overlay: 4
     },
@@ -17,7 +17,7 @@ const data = [
         slug: 'paid_headhunting',
         src: '/img/work/paid_headhunting_main.jpg',
 
-        category: ['Service 2'],
+        category: ['유료 서비스'],
         description: '합법 취업이 가능한 근로희망 외국인 이력서를 제공',
         overlay: 5
     },
@@ -27,7 +27,7 @@ const data = [
         slug: 'remote_work',
         src: '/img/work/remote_work_main.jpg',
 
-        category: ['Service 3'],
+        category: ['무료 서비스'],
         description: '외국인 근로자가 필요한 기업에 외국인 인재풀의 열람권을 안내',
         overlay: 3
     },

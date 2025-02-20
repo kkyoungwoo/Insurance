@@ -3,7 +3,7 @@ const TestimonialDetails = [
         name: "Visa",
         label: "외국인 비자업무",
         src: "/img/team/visa.jpg",
-        description: `"외국인 비자 상담 등 외국인출입국사무소 전문 행정 서비스 홈페이지 운영, 상위노출(SEO)를 통한 지속적인 DB 확보"`
+        description: `"외국인 비자 상담 등 외국인출입국사무소 전문 행정 서비스 홈페이지 운영, 주문 즉시 DB 확보 시작"`
     },
     {
         name: "VOD",

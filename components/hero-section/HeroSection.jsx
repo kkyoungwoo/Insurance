@@ -9,7 +9,7 @@ import FadeUpTrigger from "../../animation/FadeUpTrigger";
 
 const HeroContent = {
     title: "기업이 당신을 기다리고 있습니다",
-    subtitle: `워크비자는 외국인 합법 채용 기업DB를 생산합니다 `,
+    subtitle: `블루오션, 외국인 합법 고용 기업DB `,
     description: `1. 저출산 문제로 중소기업에 인력난 발생<span class="mb-10 d-block" ></span>
     2. 외국인 합법 채용으로 중소기업에 인력난 해결<span class="mb-10 d-block" ></span>
     3. 자유로운 추가 영업 진행<span class="mb-10 d-block" ></span>`,
@@ -19,7 +19,7 @@ const HeroContent = {
     experienceDescription: `매력적인 인프라`,
     heroImage: '/img/about-intro.jpg',
     awards: [
-        {number: 1, description: `건`},
+        {number: 1, description: `건 구매`},
         {number: 5, description: `만원(VAT 별도)`},
     ]
 };

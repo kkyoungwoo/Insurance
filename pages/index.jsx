@@ -25,7 +25,7 @@ function Home() {
     return (
         <Layout modelRight={{ children: <ModalContact />, propsModal: { textBtn: "Contact" } }}>
             <Head>
-                <title>기업 DB 판매 | WORK VISA</title>
+                <title>기업 DB 판매 | 보험 DB | WORK VISA</title>
             </Head>
             {/* eslint-disable react/no-unescaped-entities */}
             <SliderPortfolio
@@ -80,7 +80,7 @@ function Home() {
                         기업은 저희를 통해 무료로 외국인 합법취업 컨설팅, 유료로 외국인 이력서를 받을 수 있습니다.
                     </p>
                     <p className="mb-30">
-                        영업에 집중하세요, 나머지는 저희가 해결하겠습니다
+                        영업에 집중하세요, 외국인 고용은 저희가 해결하겠습니다
                     </p>
 
                     <div
@@ -132,7 +132,7 @@ function Home() {
                     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4">
                         <div className="max-w-2xl w-full bg-gray-800 p-8 rounded-2xl shadow-lg">
                             <h2 style={{ fontSize: "20px", marginBottom: "10px" }} className="mb-4">
-                                외국인 DB 제작과정(심화화)
+                                외국인 DB 제작과정(심화)
                             </h2>
                             <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
                                 <iframe
