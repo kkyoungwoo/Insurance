@@ -25,7 +25,7 @@ function Home() {
     return (
         <Layout modelRight={{ children: <ModalContact />, propsModal: { textBtn: "Contact" } }}>
             <Head>
-                <title>기업 DB 판매 | 보험 DB | WORK VISA</title>
+                <title>보험DB 기업DB 자체 생산 | 판매</title>
             </Head>
             {/* eslint-disable react/no-unescaped-entities */}
             <SliderPortfolio
@@ -67,34 +67,31 @@ function Home() {
                         기업 영업이 참 쉽습니다
                     </TitleSection>
 
-                    <p className="mb-20">
+                    <p className="mb-10">
                         1. 기업 인사 담당자와 방문 약속을 잡습니다
                     </p>
-                    <p className="mb-20">
+                    <p className="mb-10">
                         2. "구인요청서"와 "사업자등록증"을 받습니다
                     </p>
                     <p>
                         3. 전달받은 기업의 서류를 워크비자 이메일로 전송합니다
                     </p>
-                    <p className="mb-30">
+                    <p className="mb-20">
                         email : workvisahr@naver.com
                     </p>
-                    <p className="mb-30">
-                        기업은 저희를 통해 무료로 외국인 합법취업 컨설팅과, 유료서비스인 맞춤형 외국인 이력서를 받을 수 있습니다.
-                    </p>
-                    <p className="mb-30">
+                    <p className="mb-20">
                         대표들을 만나고 영업에 집중하세요,
                     </p>
-                    <p className="mb-30">
+                    <p className="mb-20">
                         외국인 고용은 저희가 해결하겠습니다
                     </p>
 
                     <div
     style={{
         display: "flex",
-        justifyContent: "flex-start",
+        justifyContent: "center", // 모바일에서 중앙 정렬
         gap: "20px",
-        flexWrap: "nowrap",
+        flexWrap: "wrap", // 화면 크기에 따라 자동 줄바꿈
         marginBottom: "30px",
     }}
 >
@@ -109,7 +106,9 @@ function Home() {
             borderRadius: "5px",
             cursor: "pointer",
             textAlign: "center",
-            whiteSpace: "nowrap", // 버튼이 한 줄 유지되도록 설정
+            whiteSpace: "nowrap",
+            width: "100%", // 모바일에서 가득 차게
+            maxWidth: "300px", // 버튼 최대 크기 설정
         }}
         target="_blank"
         rel="noopener noreferrer"
@@ -128,7 +127,9 @@ function Home() {
             borderRadius: "5px",
             cursor: "pointer",
             textAlign: "center",
-            whiteSpace: "nowrap", // 버튼이 한 줄 유지되도록 설정
+            whiteSpace: "nowrap",
+            width: "100%", // 모바일에서 가득 차게
+            maxWidth: "300px", // 버튼 최대 크기 설정
         }}
         target="_blank"
         rel="noopener noreferrer"
@@ -137,6 +138,7 @@ function Home() {
     </Button>
 </div>
 
+
                     
                     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4">
     <div className="max-w-2xl w-full space-y-6">
@@ -144,7 +146,7 @@ function Home() {
 {/* 첫 번째 영상 */}
 <div className="bg-gray-800 p-8 rounded-2xl shadow-lg" style={{marginBottom:"40px"}}>
     <h2 style={{ fontSize: "20px", marginBottom: "10px" }} className="mb-4">
-        워크비자 기업DB 확보 TM 스크립트
+        (1)기업DB 생산 TM 스크립트
     </h2>
     <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
         <iframe
@@ -160,7 +162,7 @@ function Home() {
         {/* 두 번째 영상 */}
         <div className="bg-gray-800 p-8 rounded-2xl shadow-lg">
             <h2 style={{ fontSize: "20px", marginBottom: "10px" }} className="mb-4">
-                질문 대응 TM 스크립트
+                (2)질문 대응 TM 스크립트
             </h2>
             <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
                 <iframe
