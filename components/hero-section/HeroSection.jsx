@@ -14,7 +14,7 @@ const HeroContent = {
     2. 외국인 합법 채용으로 중소기업에 인력난 해결<span class="mb-10 d-block" ></span>
     3. 자유로운 추가 영업 진행<span class="mb-10 d-block" ></span>`,
     authorTitle: "DB 구매 정보",
-    authorJob: "단순변심, 부재건 A/S 가능",
+    authorJob: "주문 즉시 생산 , 월 최대 300개 생산",
     experienceNumber: "WORKVISA의",
     experienceDescription: `매력적인 인프라`,
     heroImage: '/img/about-intro.jpg',
@@ -41,7 +41,7 @@ function HeroSection({className, ...restProps}) {
                             <h6 className="title-block border-bottom pb-30 mb-30" ref={ref}>{HeroContent.subtitle}</h6>
                             <p className="mb-30" ref={ref} style={{maxWidth: 570}} dangerouslySetInnerHTML={{__html: HeroContent.description}}/>
                             <h5 className="sm-title-block line-shape line-shape-after mb-10" ref={ref}>{HeroContent.authorTitle}</h5>
-                            <span className="sub-heading line-bg-left" ref={ref}>{HeroContent.authorJob}</span>
+                            <span className="sub-heading line-bg-left" style={{color: "#FFFF99",fontWeight:"bold"}} ref={ref}>{HeroContent.authorJob}</span>
                             <DsnGrid className="box-awards pt-30" col={2} colTablet={2} colGap={15} rowGap={15}>
                                 {HeroContent.awards.map(
                                     (item, index) =>
