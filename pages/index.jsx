@@ -80,7 +80,7 @@ function Home() {
                         email : workvisahr@naver.com
                     </p>
                     <p className="mb-30">
-                        기업은 저희를 통해 무료로 외국인 합법취업 컨설팅, 유료로 외국인 이력서를 받을 수 있습니다.
+                        기업은 저희를 통해 무료로 외국인 합법취업 컨설팅과, 유료서비스인 맞춤형 외국인 이력서를 받을 수 있습니다.
                     </p>
                     <p className="mb-30">
                         대표들을 만나고 영업에 집중하세요,
@@ -90,68 +90,91 @@ function Home() {
                     </p>
 
                     <div
-                        style={{
-                            display: "flex",
-                            justifyContent: "flex-start",
-                            gap: "20px",
-                            flexWrap: "wrap",
-                            marginBottom: "30px",
-                        }}
-                    >
-                        <Button
-                            href="../구인요청서.hwp"
-                            style={{
-                                padding: "10px 20px",
-                                fontSize: "16px",
-                                backgroundColor: "#4CAF50",
-                                color: "white",
-                                border: "none",
-                                borderRadius: "5px",
-                                cursor: "pointer",
-                                textAlign: "center",
-                            }}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            구인요청서 HWP 다운로드
-                        </Button>
+    style={{
+        display: "flex",
+        justifyContent: "flex-start",
+        gap: "20px",
+        flexWrap: "nowrap",
+        marginBottom: "30px",
+    }}
+>
+    <Button
+        href="../구인요청서.hwp"
+        style={{
+            padding: "10px 20px",
+            fontSize: "16px",
+            backgroundColor: "#4CAF50",
+            color: "white",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+            textAlign: "center",
+            whiteSpace: "nowrap", // 버튼이 한 줄 유지되도록 설정
+        }}
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        구인요청서 HWP 다운로드
+    </Button>
 
-                        <Button
-                            href="../구인요청서.pdf"
-                            style={{
-                                padding: "10px 20px",
-                                fontSize: "16px",
-                                backgroundColor: "#007BFF",
-                                color: "white",
-                                border: "none",
-                                borderRadius: "5px",
-                                cursor: "pointer",
-                                textAlign: "center",
-                            }}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            구인요청서 PDF 다운로드
-                        </Button>
-                    </div>
+    <Button
+        href="../구인요청서.pdf"
+        style={{
+            padding: "10px 20px",
+            fontSize: "16px",
+            backgroundColor: "#007BFF",
+            color: "white",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+            textAlign: "center",
+            whiteSpace: "nowrap", // 버튼이 한 줄 유지되도록 설정
+        }}
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        구인요청서 PDF 다운로드
+    </Button>
+</div>
 
+                    
                     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4">
-                        <div className="max-w-2xl w-full bg-gray-800 p-8 rounded-2xl shadow-lg">
-                            <h2 style={{ fontSize: "20px", marginBottom: "10px" }} className="mb-4">
-                                외국인 DB 제작과정(심화)
-                            </h2>
-                            <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
-                                <iframe
-                                    className="w-full h-full"
-                                    src="https://www.youtube-nocookie.com/embed/w9hilORl76k?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
-                                    title="YouTube Video"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowFullScreen
-                                ></iframe>
-                            </div>
-                        </div>
-                    </div>
+    <div className="max-w-2xl w-full space-y-6">
+
+{/* 첫 번째 영상 */}
+<div className="bg-gray-800 p-8 rounded-2xl shadow-lg" style={{marginBottom:"40px"}}>
+    <h2 style={{ fontSize: "20px", marginBottom: "10px" }} className="mb-4">
+        워크비자 기업DB 확보 TM 스크립트
+    </h2>
+    <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
+        <iframe
+            className="w-full h-full"
+            src="https://www.youtube-nocookie.com/embed/ENp3-x0U-Gg?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
+            title="YouTube Video 2"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+        ></iframe>
+    </div>
+</div>
+        {/* 두 번째 영상 */}
+        <div className="bg-gray-800 p-8 rounded-2xl shadow-lg">
+            <h2 style={{ fontSize: "20px", marginBottom: "10px" }} className="mb-4">
+                질문 대응 TM 스크립트
+            </h2>
+            <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
+                <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube-nocookie.com/embed/w9hilORl76k?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
+                    title="YouTube Video 1"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
+            </div>
+        </div>
+    </div>
+</div>
                 </MoveBox>
             </div>
             {/* End Box Info Move Content */}
