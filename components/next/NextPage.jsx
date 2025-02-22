@@ -29,17 +29,18 @@ function NextPage({className, ...restProps}) {
                         <h2 className="section-title max-w750 mt-15">
                             {NextContent2.title}
                         </h2>
-                    </div>
-                    <div className="button-box d-flex justify-content-end align-items-center">
-                        {/*<Button
-                            href={"./free_headhunting.pdf"}
-                            target="_blank" rel="noopener noreferrer"
-                            className="mr-15 line-head"
+                        <Button
+                            href="https://visatype.co.kr"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-15 line-head"
                             borderStyle={"border-color-heading-color"}
                             borderRadius
                         >
-                            {NextContent.buttonText}
-                        </Button>*/}
+                            비자 관련 사이트 안내 (비자타입)
+                        </Button>
+                    </div>
+                    <div className="button-box d-flex justify-content-end align-items-center">
                         <Button
                             href={"/contact"}
                             className="mr-15 line-head"
