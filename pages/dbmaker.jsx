@@ -3,6 +3,7 @@ import { read, utils, writeFile } from "xlsx";
 import Head from "next/head";
 import HeaderNormal from "../components/header/HeaderNormal";
 import Layout from "../layout/Layout";
+import Dbadd from "./dbadd";
 
 export const PopulationDeclineArea = [
   "부산 동구",
@@ -306,9 +307,9 @@ const parseAddress = (address) => {
             WORK VISA DB MAKER
           </span>
         </p>
-        <h3 className="text-uppercase">DB 제작 자체 프로그램</h3>
+        <h3 className="text-uppercase">DB 제작 프로그램</h3>
       </HeaderNormal>
-
+      <Dbadd/>
       <div className="container">
         {/* 파일 업로드 섹션 */}
         <div className="upload-section">
@@ -320,7 +321,7 @@ const parseAddress = (address) => {
             style={{ display: "none" }}
           />
           <button className="button" onClick={() => fileInputRef.current.click()}>
-            엑셀 파일 업로드
+            최종 DB 제작, 엑셀 업로드
           </button>
         </div>
 
