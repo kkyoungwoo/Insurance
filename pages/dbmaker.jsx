@@ -97,41 +97,67 @@ const DbMaker = () => {
   const [file, setFile] = useState(null);
   const [headers, setHeaders] = useState([]);
   const [selectedColumn, setSelectedColumn] = useState("");
+  const [selectedPhoneColumn, setSelectedPhoneColumn] = useState("");
   const [previewData, setPreviewData] = useState([]);
   const [fullData, setFullData] = useState([]); // 전체 데이터를 저장 (헤더 포함)
   const [filteredData, setFilteredData] = useState(null);
   const [processStatus, setProcessStatus] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const fileInputRef = useRef(null);
 
-  // 시도 이름 표준화 함수 (예: "충청남도" → "충남")
-  const normalizeRegionName = (sido) => {
-    const regionMap = {
-      "충청남도": "충남",
-      "충청북도": "충북",
-      "전라남도": "전남",
-      "전라북도": "전북",
-      "경상남도": "경남",
-      "경상북도": "경북",
-      "강원특별자치도": "강원",
-      "제주특별자치도": "제주"
-    };
-    return regionMap[sido] || sido;
+// 시도 이름 표준화 함수 개선
+const normalizeRegionName = (sido) => {
+  const regionMap = {
+    "서울특별시": "서울",
+    "부산광역시": "부산",
+    "대구광역시": "대구",
+    "인천광역시": "인천",
+    "광주광역시": "광주",
+    "대전광역시": "대전",
+    "울산광역시": "울산",
+    "세종특별자치시": "세종",
+    "경기도": "경기",
+    "충청남도": "충남",
+    "충청북도": "충북",
+    "전라남도": "전남",
+    "전라북도": "전북",
+    "경상남도": "경남",
+    "경상북도": "경북",
+    "강원특별자치도": "강원",
+    "제주특별자치도": "제주"
   };
+  return regionMap[sido] || sido.replace(/특별자치시|광역시|특별자치도/g, '');
+};
 
-  // 주소 분해 함수: 주소에서 시도와 군구를 추출  
-  // 예) "충청남도 천안시 동남구 ..." → { sido: "충남", gungu: "동남구" }
-  const parseAddress = (address) => {
-    if (!address) return null;
-    // address를 문자열로 변환한 후 치환 처리
-    address = (address?.toString() || '').replace(/\s+/g, ' ').trim();
-    const match = address.match(
-      /(\S+특별자치도|\S+특별자치시|\S+특별시|\S+광역시|\S+도|\S+시)\s+(\S+구|\S+시|\S+군)/
-    );
-    if (!match) return null;
-    const sido = normalizeRegionName(match[1]);
-    const gungu = match[2];
-    return { sido, gungu };
-  };
+// 개선된 주소 분해 함수
+const parseAddress = (address) => {
+  if (!address) return null;
+  address = address.toString()
+    .replace(/\([^)]*\)/g, '') // 괄호 내용 제거
+    .replace(/출근지|센터/g, '') // 특정 키워드 제거
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  // 특별시/광역시/도 + 구/군/시 추출
+  const pattern1 = /((?:[가-힣]+특별자치시|[가-힣]+광역시|[가-힣]+특별자치도|[가-힣]+도|세종특별자치시))\s+([가-힣]+구|[가-힣]+시|[가-힣]+군)/;
+  
+  // 광역시 생략 형식 (예: "울산 울주군")
+  const pattern2 = /(부산|대구|인천|광주|대전|울산|세종)\s+([가-힣]+구|[가-힣]+시|[가-힣]+군)/;
+
+  let match = address.match(pattern1) || address.match(pattern2);
+  
+  if (!match) {
+    // 도시명 + 구 형식 (예: "대전 서구")
+    const fallback = address.match(/([가-힣]{2,}[시])\s+([가-힣]+구)/);
+    if (fallback) return { sido: fallback[1], gungu: fallback[2] };
+    return null;
+  }
+
+  const sido = normalizeRegionName(match[1]);
+  const gungu = match[2].replace(/시$/, ''); // '시' 접미사 제거
+
+  return { sido, gungu };
+};
 
   // 파일 읽기 핸들러
   const handleFileUpload = async (e) => {
@@ -159,17 +185,21 @@ const DbMaker = () => {
     if (jsonData && jsonData.length > 0) {
       setHeaders(jsonData[0]);
       setFullData(jsonData);
-      setPreviewData(jsonData.slice(1, 1));
+      // 미리보기는 주소 컬럼 선택 후 갱신
+      setPreviewData([]);
     }
+    // 파일 업로드 시 이전 선택값 및 결과 초기화
     setSelectedColumn("");
+    setSelectedPhoneColumn("");
     setFilteredData(null);
     setProcessStatus("");
   };
 
-  // 드롭다운에서 주소 컬럼 선택 시 미리보기 갱신
+  // 주소 컬럼 선택 핸들러 (미리보기 갱신)
   const handleColumnSelect = (e) => {
     const column = e.target.value;
     setSelectedColumn(column);
+    setFilteredData(null);
     if (fullData.length > 0 && headers.length > 0) {
       const colIndex = headers.indexOf(column);
       const newPreview = fullData.slice(1, 6).map((row) => row[colIndex]);
@@ -177,66 +207,87 @@ const DbMaker = () => {
     }
   };
 
-  // 데이터 필터링 및 처리: 선택한 주소 열에서 추출한 시도/군구를 새로운 열로 추가
-const processData = async () => {
-    if (!file || !selectedColumn) return;
+  // 전화번호 컬럼 선택 핸들러
+  const handlePhoneColumnSelect = (e) => {
+    const phoneColumn = e.target.value;
+    setSelectedPhoneColumn(phoneColumn);
+    setFilteredData(null);
+  };
+
+  // 데이터 처리 함수: 주소에서 시도/군구 추출 및 전화번호 중복 제거 (나중 등록 데이터 삭제)
+  const processData = async () => {
+    if (!file || !selectedColumn || !selectedPhoneColumn) return;
+    setIsLoading(true);
     setProcessStatus("처리 중...");
-  
+
     const jsonData = fullData;
     const addressIndex = headers.indexOf(selectedColumn);
+    const phoneIndex = headers.indexOf(selectedPhoneColumn);
     const newHeader = ["시도", "군구", ...headers];
-  
-    const newRows = jsonData
-      .slice(1)
-      .map((row) => {
-        const address = row[addressIndex];
-        const parsed = parseAddress(address);
-        if (!parsed) return null;
-        const { sido, gungu } = parsed;
-        if (PopulationDeclineArea.includes(`${sido} ${gungu}`)) {
-          return [sido, gungu, ...row];
+
+    const newRows = [];
+    const phoneNumbersSet = new Set();
+
+    jsonData.slice(1).forEach((row) => {
+      const address = row[addressIndex];
+      const parsed = parseAddress(address);
+      if (!parsed) return;
+      const { sido, gungu } = parsed;
+      if (PopulationDeclineArea.includes(`${sido} ${gungu}`)) {
+        const phone = row[phoneIndex];
+
+        // 전화번호가 "-", null, undefined, 빈 문자열이면 중복 제거를 적용하지 않음
+        if (phone && phone !== "-" && phone.trim() !== "") {
+          if (phoneNumbersSet.has(phone)) {
+            // 중복된 전화번호가 있으면 건너뜀
+            return;
+          }
+          phoneNumbersSet.add(phone);
         }
-        return null;
-      })
-      .filter((row) => row !== null);
-  
+
+        newRows.push([sido, gungu, ...row]);
+      }
+    });
+
     const resultData = [newHeader, ...newRows];
     setFilteredData(resultData);
-  
-    // 전체 데이터(헤더 제외) 개수와 필터링된 데이터 개수를 계산합니다.
+
     const totalCount = jsonData.length - 1;
     const filteredCount = newRows.length;
-  
+
     setProcessStatus(
       <>
         변환 완료! 다운로드 버튼을 클릭해 {totalCount}개 중{" "}
-        <span style={{ color: "#92FF0D", fontWeight: "bold" }}>{filteredCount}</span>
-        개의 파일을 받으세요.
+        <span style={{ color: "#92FF0D", fontWeight: "bold" }}>
+          {filteredCount}
+        </span>
+        개의 데이터를 받으세요.
       </>
     );
-  }
+    setIsLoading(false);
+  };
 
   // 파일 다운로드 핸들러 (엑셀 파일로 저장)
-const handleDownload = () => {
-  if (!filteredData) return;
+  const handleDownload = () => {
+    if (!filteredData) return;
 
-  // 현재 날짜 가져오기 (YYYY.MM.DD 형식)
-  const today = new Date();
-  const formattedDate = today.toISOString().slice(0, 10).replace(/-/g, ".");
+    // 현재 날짜 가져오기 (YYYY.MM.DD 형식)
+    const today = new Date();
+    const formattedDate = today.toISOString().slice(0, 10).replace(/-/g, ".");
 
-  // 다운로드 횟수 관리 (예: 로컬 상태 또는 전역 상태에서 가져오기)
-  let downloadCount = parseInt(localStorage.getItem("downloadCount") || "0", 10) + 1;
-  localStorage.setItem("downloadCount", downloadCount);
+    // 다운로드 횟수 관리 (예: 로컬 스토리지 사용)
+    let downloadCount = parseInt(localStorage.getItem("downloadCount") || "0", 10) + 1;
+    localStorage.setItem("downloadCount", downloadCount);
 
-  // 파일명 생성 (예: 2025.01.12_DB(1))
-  const fileName = `${formattedDate}_DB(${downloadCount}).xlsx`;
+    // 파일명 생성 (예: 2025.01.12_DB(1))
+    const fileName = `${formattedDate}_DB(${downloadCount}).xlsx`;
 
-  // 엑셀 파일 생성 및 다운로드
-  const ws = utils.aoa_to_sheet(filteredData);
-  const wb = utils.book_new();
-  utils.book_append_sheet(wb, ws, "Filtered Data");
-  writeFile(wb, fileName);
-};
+    // 엑셀 파일 생성 및 다운로드
+    const ws = utils.aoa_to_sheet(filteredData);
+    const wb = utils.book_new();
+    utils.book_append_sheet(wb, ws, "Filtered Data");
+    writeFile(wb, fileName);
+  };
 
   return (
     <Layout>
@@ -273,10 +324,12 @@ const handleDownload = () => {
           </button>
         </div>
 
-        {/* 컬럼 선택 섹션 */}
+        {/* 주소 컬럼 선택 섹션 */}
         {headers.length > 0 && (
           <div className="dropdown-section">
+            <label htmlFor="addressColumn">주소 컬럼: </label>
             <select
+              id="addressColumn"
               value={selectedColumn}
               onChange={handleColumnSelect}
               className="select-field"
@@ -291,22 +344,43 @@ const handleDownload = () => {
           </div>
         )}
 
-        {/* 미리보기: 상위 5개 행 */}
+        {/* 중복 컬럼 선택 섹션 */}
+        {headers.length > 0 && (
+          <div className="dropdown-section">
+            <label htmlFor="phoneColumn">중복 제거 컬럼(휴대폰 번호 추천): </label>
+            <select
+              id="phoneColumn"
+              value={selectedPhoneColumn}
+              onChange={handlePhoneColumnSelect}
+              className="select-field"
+            >
+              <option value="">전화번호 컬럼 선택</option>
+              {headers.map((header, index) => (
+                <option key={index} value={header}>
+                  {header}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+
+        {/* 미리보기 (주소 컬럼의 상위 5개 행) */}
         {previewData.length > 0 && (
           <div className="preview-section">
-            <h3>미리보기</h3>
+            <h3>미리보기 (주소 컬럼)</h3>
             <pre className="preview-container">
               {JSON.stringify(previewData, null, 2)}
             </pre>
           </div>
         )}
 
-        {/* 처리 버튼 및 상태 */}
-        {selectedColumn && (
+        {/* 변환 실행 버튼 및 상태 */}
+        {(selectedColumn && selectedPhoneColumn) && (
           <div className="process-section">
-            <button className="button" onClick={processData}>
+            <button className="button" onClick={processData} disabled={isLoading}>
               변환 실행
             </button>
+            {isLoading && <div className="loading-spinner">로딩 중...</div>}
             {processStatus && <span className="status">{processStatus}</span>}
           </div>
         )}
