@@ -322,7 +322,7 @@ const processData = async () => {
             WORK VISA DB MAKER
           </span>
         </p>
-        <h3 className="text-uppercase">DB 제작 프로그램</h3>
+        <h3 className="text-uppercase">DB 생성 프로그램</h3>
       </HeaderNormal>
       <Dbadd/>
       <div className="container">

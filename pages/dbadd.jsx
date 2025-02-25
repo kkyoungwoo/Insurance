@@ -205,7 +205,7 @@ const Dbadd = () => {
             htmlFor="dropdown"
             style={{ marginRight: "8px", fontWeight: "bold" }}
           >
-            필터할 열 선택:
+            중복항목 제거할 열 선택:
           </label>
           <select
             id="dropdown"
