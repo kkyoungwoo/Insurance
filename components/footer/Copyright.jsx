@@ -1,4 +1,5 @@
 import { dsnCN } from "../../hooks/helper";
+import Link from "next/link";
 
 function Copyright({ className, ...restProps }) {
   const copyEmail = () => {
@@ -14,29 +15,29 @@ function Copyright({ className, ...restProps }) {
           className="link-hover"
           data-hover-text="주식회사 워크비자"
           target="_blank"
-          rel="nofollow"
+          rel="noopener noreferrer nofollow"
           href="https://workvisa.co.kr"
         >
           주식회사 워크비자
         </a>
       </h5>
-      <h5>
-        <span style={{ marginLeft: "10px" }}>사업자등록번호 : 673-87-02961</span>
-      </h5>
-      <h5>
-        <span style={{ marginLeft: "10px" }}>대표 : 고경우</span>
-      </h5>
-      <h5>
-        <span
-          style={{ marginLeft: "10px", cursor: "pointer" }}
-          onClick={copyEmail}
-        >
-          E-mail : workvisa@naver.com
-        </span>
+      <h5 className="copyright-info">사업자등록번호 : 673-87-02961</h5>
+      <h5 className="copyright-info">대표 : 고경우</h5>
+      <h5 className="copyright-info email" onClick={copyEmail}>
+        E-mail : workvisa@naver.com
       </h5>
       <div>
-        <a href="/dbmaker">DB 프로그램</a>
+        <Link href="/dbmaker">DB 프로그램</Link>
       </div>
+
+      <style jsx>{`
+        .copyright-info {
+          margin-left: 10px;
+        }
+        .email {
+          cursor: pointer;
+        }
+      `}</style>
     </>
   );
 }
