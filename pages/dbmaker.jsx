@@ -106,7 +106,7 @@ const DbMaker = () => {
   const [isLoading, setIsLoading] = useState(false);
   const fileInputRef = useRef(null);
 
-// 시도 이름 표준화 함수 개선
+// 시도 이름 정규화 함수
 const normalizeRegionName = (sido) => {
   const regionMap = {
     "서울특별시": "서울",
@@ -130,33 +130,46 @@ const normalizeRegionName = (sido) => {
   return regionMap[sido] || sido.replace(/특별자치시|광역시|특별자치도/g, '');
 };
 
-// 개선된 주소 분해 함수
+// PopulationDeclineArea의 항목을 정규화 (예: "경북 안동시" → "경북 안동")
+const normalizeFullArea = (area) => {
+  const parts = area.split(" ");
+  if (parts.length < 2) return area;
+  const region = normalizeRegionName(parts[0]);
+  // 여러 단어로 이루어진 경우도 대비하여 join 사용
+  let district = parts.slice(1).join(" ");
+  // 만약 district가 "시"로 끝나면 제거 (예: "안동시" → "안동")
+  district = district.replace(/시$/, '');
+  return `${region} ${district}`;
+};
+
+// 주소 문자열에서 시도와 군/구/시를 추출하는 함수 (개선된 정규표현식 사용)
 const parseAddress = (address) => {
   if (!address) return null;
   address = address.toString()
-    .replace(/\([^)]*\)/g, '') // 괄호 내용 제거
+    .replace(/\([^)]*\)/g, '') // 괄호 내 내용 제거
     .replace(/출근지|센터/g, '') // 특정 키워드 제거
     .replace(/\s+/g, ' ')
     .trim();
-
-  // 특별시/광역시/도 + 구/군/시 추출
-  const pattern1 = /((?:[가-힣]+특별자치시|[가-힣]+광역시|[가-힣]+특별자치도|[가-힣]+도|세종특별자치시))\s+([가-힣]+구|[가-힣]+시|[가-힣]+군)/;
   
-  // 광역시 생략 형식 (예: "울산 울주군")
-  const pattern2 = /(부산|대구|인천|광주|대전|울산|세종)\s+([가-힣]+구|[가-힣]+시|[가-힣]+군)/;
-
-  let match = address.match(pattern1) || address.match(pattern2);
+  // 아래 정규표현식은 서울, 부산, 대구, 인천, 광주, 대전, 울산, 세종, 경기, 충남, 충북, 전남, 전북, 경남, 경북, 강원, 제주 등의
+  // 풀 또는 축약형(예: "서울", "경기")을 모두 커버합니다.
+  const pattern1 = /((?:서울(?:특별시)?|부산(?:광역시)?|대구(?:광역시)?|인천(?:광역시)?|광주(?:광역시)?|대전(?:광역시)?|울산(?:광역시)?|세종(?:특별자치시)?|경기(?:도)?|충남(?:도)?|충북(?:도)?|전남(?:도)?|전북(?:도)?|경남(?:도)?|경북(?:도)?|강원(?:특별자치도)?|제주(?:특별자치도)?))\s+([가-힣]+(?:구|시|군))/;
   
+  let match = address.match(pattern1);
   if (!match) {
-    // 도시명 + 구 형식 (예: "대전 서구")
-    const fallback = address.match(/([가-힣]{2,}[시])\s+([가-힣]+구)/);
-    if (fallback) return { sido: fallback[1], gungu: fallback[2] };
+    // 공백 기준 단순 분리 시도 (최소 두 단어가 있으면)
+    const fallback = address.split(" ");
+    if (fallback.length >= 2) {
+       const sido = normalizeRegionName(fallback[0]);
+       const gungu = fallback[1].replace(/시$/, '');
+       return { sido, gungu };
+    }
     return null;
   }
-
+  
   const sido = normalizeRegionName(match[1]);
-  const gungu = match[2].replace(/시$/, ''); // '시' 접미사 제거
-
+  // gungu가 "시"로 끝나면 제거하여 "안동시"와 "안동"을 동일하게 취급
+  const gungu = match[2].replace(/시$/, '');
   return { sido, gungu };
 };
 
@@ -215,58 +228,60 @@ const parseAddress = (address) => {
     setFilteredData(null);
   };
 
-  // 데이터 처리 함수: 주소에서 시도/군구 추출 및 전화번호 중복 제거 (나중 등록 데이터 삭제)
-  const processData = async () => {
-    if (!file || !selectedColumn || !selectedPhoneColumn) return;
-    setIsLoading(true);
-    setProcessStatus("처리 중...");
+// 데이터 처리 함수 내 수정 (processData)
+const processData = async () => {
+  if (!file || !selectedColumn || !selectedPhoneColumn) return;
+  setIsLoading(true);
+  setProcessStatus("처리 중...");
 
-    const jsonData = fullData;
-    const addressIndex = headers.indexOf(selectedColumn);
-    const phoneIndex = headers.indexOf(selectedPhoneColumn);
-    const newHeader = ["시도", "군구", ...headers];
+  const jsonData = fullData;
+  const addressIndex = headers.indexOf(selectedColumn);
+  const phoneIndex = headers.indexOf(selectedPhoneColumn);
+  const newHeader = ["시도", "군구", ...headers];
 
-    const newRows = [];
-    const phoneNumbersSet = new Set();
+  const newRows = [];
+  const phoneNumbersSet = new Set();
 
-    jsonData.slice(1).forEach((row) => {
-      const address = row[addressIndex];
-      const parsed = parseAddress(address);
-      if (!parsed) return;
-      const { sido, gungu } = parsed;
-      if (PopulationDeclineArea.includes(`${sido} ${gungu}`)) {
-        const phone = row[phoneIndex];
+  // PopulationDeclineArea 배열의 각 항목을 정규화 (예, "경북 안동시" → "경북 안동")
+  const normalizedPopulationDeclineArea = PopulationDeclineArea.map(area => normalizeFullArea(area));
 
-        // 전화번호가 "-", null, undefined, 빈 문자열이면 중복 제거를 적용하지 않음
-        if (phone && phone !== "-" && phone.trim() !== "") {
-          if (phoneNumbersSet.has(phone)) {
-            // 중복된 전화번호가 있으면 건너뜀
-            return;
-          }
-          phoneNumbersSet.add(phone);
+  jsonData.slice(1).forEach((row) => {
+    const address = row[addressIndex];
+    const parsed = parseAddress(address);
+    if (!parsed) return;
+    const { sido, gungu } = parsed;
+    const normalizedAddress = `${sido} ${gungu}`;
+    
+    // 정규화된 주소가 PopulationDeclineArea에 포함되어 있으면 해당 데이터 추가
+    if (normalizedPopulationDeclineArea.includes(normalizedAddress)) {
+      const phone = row[phoneIndex];
+      if (phone && phone !== "-") {
+        const phoneStr = phone.toString().trim();
+        if (phoneStr !== "") {
+          if (phoneNumbersSet.has(phoneStr)) return;
+          phoneNumbersSet.add(phoneStr);
         }
-
-        newRows.push([sido, gungu, ...row]);
       }
-    });
+      newRows.push([sido, gungu, ...row]);
+    }
+  });
 
-    const resultData = [newHeader, ...newRows];
-    setFilteredData(resultData);
+  const resultData = [newHeader, ...newRows];
+  setFilteredData(resultData);
 
-    const totalCount = jsonData.length - 1;
-    const filteredCount = newRows.length;
-
-    setProcessStatus(
-      <>
-        변환 완료! 다운로드 버튼을 클릭해 {totalCount}개 중{" "}
-        <span style={{ color: "#92FF0D", fontWeight: "bold" }}>
-          {filteredCount}
-        </span>
-        개의 데이터를 받으세요.
-      </>
-    );
-    setIsLoading(false);
-  };
+  const totalCount = jsonData.length - 1;
+  const filteredCount = newRows.length;
+  setProcessStatus(
+    <>
+      변환 완료! 다운로드 버튼을 클릭해 {totalCount}개 중{" "}
+      <span style={{ color: "#92FF0D", fontWeight: "bold" }}>
+        {filteredCount}
+      </span>
+      개의 데이터를 받으세요.
+    </>
+  );
+  setIsLoading(false);
+};
 
   // 파일 다운로드 핸들러 (엑셀 파일로 저장)
   const handleDownload = () => {
