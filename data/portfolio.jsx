@@ -8,7 +8,7 @@ const data = [
         src: '/img/work/free_headhunting_main.jpg',
 
         category: ['보험 DB (기업 영업)'],
-        description: '합법취업이 가능한 외국인 고용 무료 지원',
+        description: '외국인 합법 채용 컨설팅 무료 지원',
         overlay: 4
     },
     {

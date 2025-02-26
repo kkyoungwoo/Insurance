@@ -20,7 +20,7 @@ const HeroContent = {
     heroImage: '/img/about-intro.jpg',
     awards: [
         {number: 1, description: `건 구매`},
-        {number: 5, description: `만원(VAT 별도)`},
+        {number: 8, description: `만원(VAT 별도)`},
     ]
 };
 

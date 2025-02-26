@@ -33,13 +33,7 @@ function Project3(params) {
             <h4 className="title-block text-uppercase mb-20">info</h4>
             <ul className="intro-project-list">
               <li className="p-relative">
-                <strong>업무</strong> 외국인 합법취업을 필요로하는 회사 미팅
-              </li>
-              <li className="p-relative">
-                <strong>수수료</strong> 협의 후 결정
-              </li>
-              <li className="p-relative">
-                <strong>급여일</strong> 익월 10 일
+                <strong>업무</strong> 외국인 합법취업을 필요로하는 회사와와 미팅
               </li>
             </ul>
           </div>

@@ -146,7 +146,7 @@ function Home() {
 {/* 첫 번째 영상 */}
 <div className="bg-gray-800 p-8 rounded-2xl shadow-lg" style={{marginBottom:"40px"}}>
     <h2 style={{ fontSize: "20px", marginBottom: "10px" }} className="mb-4">
-        (1)기업DB 생산 TM 스크립트
+        기업 컨설팅 예시 (1)
     </h2>
     <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
         <iframe
@@ -162,7 +162,7 @@ function Home() {
         {/* 두 번째 영상 */}
         <div className="bg-gray-800 p-8 rounded-2xl shadow-lg">
             <h2 style={{ fontSize: "20px", marginBottom: "10px" }} className="mb-4">
-                (2)질문 대응 TM 스크립트
+                기업 컨설팅 예시 (2)
             </h2>
             <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
                 <iframe
