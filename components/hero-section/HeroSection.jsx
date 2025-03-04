@@ -13,7 +13,7 @@ const HeroContent = {
     description: `1. 저출산 문제로 중소기업에 인력난 발생<span class="mb-10 d-block" ></span>
     2. 외국인 합법 채용으로 중소기업에 인력난 해결<span class="mb-10 d-block" ></span>
     3. 자유로운 추가 영업 진행<span class="mb-10 d-block" ></span>`,
-    authorTitle: "DB 구매 정보",
+    authorTitle: "DB 구매 정보 (*조기 마감될 수 있습니다)",
     authorJob: "주문 즉시 생산 , 월 최대 300개 생산",
     experienceNumber: "WORKVISA의",
     experienceDescription: `매력적인 인프라`,

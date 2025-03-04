@@ -52,8 +52,7 @@ function Portfolio({className, filterClass, useFilter, stylePortfolio, styleBox,
     return (
 
         <section className={dsnCN("work",className, stylePortfolio, styleBox && `with-lc`)}>
-            {useFilter &&
-            <FilterPortfolio className={filterClass} categories={[...category]} actionFilter={setFilter}/>}
+
             <DsnGrid  {...restProps}className={useFilter && "dsn-grid-masonry"} ref={refIsotope}>
                 {
                     dataPortfolio.map(

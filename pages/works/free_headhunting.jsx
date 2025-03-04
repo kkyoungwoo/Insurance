@@ -85,7 +85,7 @@ function Project3(params) {
       유료 서비스로 맞춤형 외국인 이력서 전달 서비스도 제공됩니다.<br />
       대기 인원이 많으므로 <strong>미리 예약해 두시는 것이 유리</strong>합니다.<br />
       <span className="price-info">
-        본사 구매 시 <strong>1인당 15만원</strong>, 영업인을 통해 구매 시 <strong>1인당 9만원</strong>에 제공됩니다.
+        구매 시 <strong>1인당 15만원</strong>이 발생됩니다.
       </span>
     </p>
   </div>

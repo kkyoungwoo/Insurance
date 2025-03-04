@@ -26,7 +26,6 @@ function Work() {
                 </h1>
             </HeaderNormal>
             {/*========== End Header Normal ==========*/}
-
             <div className="container section-margin">
                 <Portfolio stylePortfolio={"work-section"}
                             className="title-inherit h4"

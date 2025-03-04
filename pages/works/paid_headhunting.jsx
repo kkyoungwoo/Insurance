@@ -35,13 +35,7 @@ function Project3(params) {
             <h4 className="title-block text-uppercase mb-20">info</h4>
             <ul className="intro-project-list">
               <li className="p-relative">
-                <strong>업무</strong> 외국인 합법취업이 가능한 회사 미팅
-              </li>
-              <li className="p-relative">
-                <strong>수수료</strong> 맞춤형 이력서 모집의 50% 수수료
-              </li>
-              <li className="p-relative">
-                <strong>급여일</strong> 취업확정 후 익월 10일
+                <strong>업무</strong> 외국인 합법취업이 가능한 회사에 맞춤형 이력서 전달
               </li>
             </ul>
           </div>
@@ -56,7 +50,7 @@ function Project3(params) {
               <span className="cat-item">
                 워크비자에 구인요청서, 사업자등록증 서류 전달
               </span>
-              <span className="cat-item">취업 확정 후 수수료 지급</span>
+              <span className="cat-item">워크비자 본사에서 비자 컨설팅 및 외국인 이력서 전달</span>
             </div>
           </div>
         </DsnGrid>
@@ -90,12 +84,12 @@ function Project3(params) {
         <ParallaxImage src="/img/work/paid_headhunting.jpg" overlay={2} alt="" />
         <MoveBox>
           <TitleSection className="align-items-start mb-30" defaultSpace={false}>
-            1건당 45,000원 수익
+            외국인 이력서 확보 가능
           </TitleSection>
           <p className="mb-10">
-            사업장은 건당 9만원의 이력서 확보 비용 발생
+            사업장은 합법 외국인 이력서 확보 비용 발생
           </p>
-          <p className="mb-10">최소 구매수량 5개</p>
+          <p className="mb-10">최소 구매수량 5개 / 건당 150,000원</p>
         </MoveBox>
       </div>
       {/* End Box Info Move Content */}
