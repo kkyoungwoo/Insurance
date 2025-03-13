@@ -1,4 +1,4 @@
-import React from "react";
+import {useState} from "react";
 import Layout from "../layout/Layout";
 import SliderPortfolio from "../components/slider-portfolio/SliderPortfolio";
 import HeroSection from "../components/hero-section/HeroSection";
@@ -22,6 +22,15 @@ TitleSection.defaultProps = {
 };
 
 function Home() {
+
+    const [selectedVideo, setSelectedVideo] = useState("tmScript");
+    
+    const videos = [
+        { id: "tmScript", title: "방문상담 TM 및 프리랜서 안내", url: "https://www.youtube-nocookie.com/embed/irKvva8QQfs?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1" },
+        { id: "consulting1", title: "기업 컨설팅 예시 (공장1)", url: "https://www.youtube-nocookie.com/embed/ENp3-x0U-Gg?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1" },
+        { id: "consulting2", title: "기업 컨설팅 예시 (공장2)", url: "https://www.youtube-nocookie.com/embed/w9hilORl76k?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1" },
+    ];
+
     return (
         <Layout modelRight={{ children: <ModalContact />, propsModal: { textBtn: "Contact" } }}>
             <Head>
@@ -140,44 +149,62 @@ function Home() {
 
 
                     
-                    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4">
-    <div className="max-w-2xl w-full space-y-6">
+<div className="max-w-2xl w-full space-y-6">
+            <h2 className="text-white text-xl mb-4" style={{marginBottom:"30px"}}>🎬 전화 스크립트</h2>
+            <div className="relative">
+    <select 
+        style={{
+            width: '100%',
+            padding: '1rem',
+            borderRadius: '0.75rem',
+            backgroundColor: '#2d3748', // Dark gray background
+            color: 'white',
+            border: '2px solid #4a5568', // Border color
+            outline: 'none',
+            transition: 'border-color 0.2s ease',
+            fontSize: '1rem',
+            fontWeight: '500',
+            boxSizing: 'border-box'
+        }}
+        value={selectedVideo} 
+        onChange={(e) => setSelectedVideo(e.target.value)}
+    >
+        {videos.map(video => (
+            <option 
+                key={video.id} 
+                value={video.id} 
+                style={{
+                    backgroundColor: '#2d3748', // Option background
+                    color: 'white',
+                    padding: '0.75rem',
+                    fontSize: '1rem'
+                }}
+            >
+                {video.title}
+            </option>
+        ))}
+    </select>
+</div>
 
-{/* 첫 번째 영상 */}
-<div className="bg-gray-800 p-8 rounded-2xl shadow-lg" style={{marginBottom:"40px"}}>
-    <h2 style={{ fontSize: "20px", marginBottom: "10px" }} className="mb-4">
-        기업 컨설팅 예시 (1)
-    </h2>
-    <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
-        <iframe
-            className="w-full h-full"
-            src="https://www.youtube-nocookie.com/embed/ENp3-x0U-Gg?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
-            title="YouTube Video 2"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-        ></iframe>
-    </div>
-</div>
-        {/* 두 번째 영상 */}
-        <div className="bg-gray-800 p-8 rounded-2xl shadow-lg">
-            <h2 style={{ fontSize: "20px", marginBottom: "10px" }} className="mb-4">
-                기업 컨설팅 예시 (2)
-            </h2>
-            <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md">
-                <iframe
-                    className="w-full h-full"
-                    src="https://www.youtube-nocookie.com/embed/w9hilORl76k?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
-                    title="YouTube Video 1"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
-            </div>
+
+            {videos.map(video => (
+                video.id === selectedVideo && (
+                    <div key={video.id} className="bg-gray-800 p-8 rounded-2xl shadow-lg">
+                        <div className="w-full aspect-video rounded-lg overflow-hidden shadow-md" style={{marginTop:"30px"}}>
+                            <iframe
+                                className="w-full h-full"
+                                src={video.url}
+                                title={video.title}
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                    </div>
+                )
+            ))}
         </div>
-    </div>
-</div>
-                </MoveBox>
+             </MoveBox>
             </div>
             {/* End Box Info Move Content */}
 
