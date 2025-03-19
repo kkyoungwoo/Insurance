@@ -30,6 +30,16 @@ function NextPage({className, ...restProps}) {
                             {NextContent2.title}
                         </h2>
                         <Button
+                            href="https://workvisa.co.kr"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-15 line-head"
+                            borderStyle={"border-color-heading-color"}
+                            borderRadius
+                        >
+                            구인구직 사이트 (워크비자)
+                        </Button>
+                        <Button
                             href="https://visatype.co.kr"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -37,7 +47,7 @@ function NextPage({className, ...restProps}) {
                             borderStyle={"border-color-heading-color"}
                             borderRadius
                         >
-                            비자 관련 사이트 안내 (비자타입)
+                            취업비자 사이트 안내 (비자타입)
                         </Button>
                     </div>
                     <div className="button-box d-flex justify-content-end align-items-center">
