@@ -568,7 +568,8 @@ export default function AutoCall() {
               <div>고유 번호: {uniqueCount}개</div>
             </div>
             <div style={{ display: 'flex', gap: '1rem', marginBottom: '1rem', alignItems: 'center' }}>
-              <input
+            <span>전화 딜레이</span>
+            <input
                 type="number"
                 style={{ ...inputStyle, width: '80px' }}
                 value={state.delayTime}
