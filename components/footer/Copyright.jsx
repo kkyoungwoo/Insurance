@@ -26,9 +26,6 @@ function Copyright({ className, ...restProps }) {
       <h5 className="copyright-info email" onClick={copyEmail}>
         E-mail : workvisa@naver.com
       </h5>
-      <div>
-        <Link href="/dbmaker">DB 프로그램</Link>
-      </div>
 
       <style jsx>{`
         .copyright-info {

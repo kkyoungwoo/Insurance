@@ -4,6 +4,7 @@ import Head from "next/head";
 import HeaderNormal from "../components/header/HeaderNormal";
 import Layout from "../layout/Layout";
 import Dbadd from "./dbadd";
+import Autocall from "./autocall";
 
 export const PopulationDeclineArea = [
   '부산 동구',
@@ -310,8 +311,9 @@ const processData = async () => {
             WORK VISA DB MAKER
           </span>
         </p>
-        <h3 className="text-uppercase">DB 생성 프로그램</h3>
+        <h3 className="text-uppercase">DB CALL SYSTEM</h3>
       </HeaderNormal>
+      <Autocall/>
       <Dbadd/>
       <div className="container">
         {/* 파일 업로드 섹션 */}

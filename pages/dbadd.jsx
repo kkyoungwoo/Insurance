@@ -128,7 +128,7 @@ const Dbadd = () => {
   return (
     <div
       style={{
-        maxWidth: "600px",
+        maxWidth: "800px",
         margin: "40px auto",
         padding: "24px",
         backgroundColor: "#1a202c",
