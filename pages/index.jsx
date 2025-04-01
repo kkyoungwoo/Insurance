@@ -81,7 +81,7 @@ function Home() {
                         1. 기업 인사 담당자와 방문 약속을 잡습니다
                     </p>
                     <p className="mb-10">
-                        2. "구인요청서"와 "사업자등록증"을 받습니다
+                        2. "구인요청서"를 받습니다
                     </p>
                     <p>
                         3. 전달받은 기업의 서류를 워크비자 이메일로 전송합니다
@@ -105,6 +105,26 @@ function Home() {
         marginBottom: "30px",
     }}
 >
+    <Button
+        href="../영업 가이드북.pdf"
+        style={{
+            padding: "10px 20px",
+            fontSize: "16px",
+            backgroundColor: "#274893",
+            color: "white",
+            border: "none",
+            borderRadius: "5px",
+            cursor: "pointer",
+            textAlign: "center",
+            whiteSpace: "nowrap",
+            width: "100%", // 모바일에서 가득 차게
+            maxWidth: "300px", // 버튼 최대 크기 설정
+        }}
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        기업 영업 가이드북 다운로드
+    </Button>
     <Button
         href="../구인요청서.hwp"
         style={{

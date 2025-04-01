@@ -44,9 +44,9 @@ function Project3(params) {
             </p>
             <div className="intro-project-cat mt-30">
               <span className="cat-item">회사 미팅</span>
-              <span className="cat-item">회사 구인요청서, 사업자등록증 확보</span>
+              <span className="cat-item">회사 구인요청서 확보</span>
               <span className="cat-item">
-                워크비자에 구인요청서, 사업자등록증 서류 전달
+                워크비자에 구인요청서 서류 전달
               </span>
             </div>
           </div>
@@ -92,7 +92,7 @@ function Project3(params) {
 
   <div className="intro-project-highlight">
     <p className="highlight-text">
-      <strong>⚠️ 필수: </strong> DB활용시 1차로 구인 요청서와 사업자등록증은 반드시 받아야 합니다.
+      <strong>⚠️ 필수: </strong> DB활용시 1차로 구인 요청서는 반드시 받아야 합니다.
     </p>
   </div>
 </div>
