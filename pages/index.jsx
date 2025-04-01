@@ -151,7 +151,28 @@ function Home() {
 
                     
 <div className="max-w-2xl w-full space-y-6">
-            <h2 className="text-white mb-4" style={{marginBottom:"30px", fontSize:"25px"}}>🎬 전화 스크립트 (4종)</h2>
+<div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "30px",marginBottom:"30px" }}>
+  <h2 className="text-white" style={{ fontSize: "25px", margin: 0 }}>🎬 전화 스크립트 (4종)</h2>
+  <a
+    href="../TM 스크립트 녹음 파일.zip" // 실제 파일 경로로 변경 필요
+    download
+    style={{
+      padding: "10px 20px",
+      backgroundColor: "#2563eb",
+      color: "white",
+      borderRadius: "5px",
+      textDecoration: "none",
+      cursor: "pointer",
+      transition: "background-color 0.3s",
+      whiteSpace: "nowrap",
+      fontWeight: 500
+    }}
+    onMouseOver={(e) => e.currentTarget.style.backgroundColor = "#1d4ed8"}
+    onMouseOut={(e) => e.currentTarget.style.backgroundColor = "#2563eb"}
+  >
+    TM 녹음 파일 다운로드
+  </a>
+</div>
             <div className="relative">
     <select 
         style={{
