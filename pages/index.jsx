@@ -26,7 +26,7 @@ function Home() {
     const [selectedVideo, setSelectedVideo] = useState("newVideo");
     
     const videos = [
-        { id: "newVideo", title: "DB 확보 샘플 TM", url: "https://www.youtube-nocookie.com/embed/d7Qp4u0GOqQ?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1" },
+        { id: "newVideo", title: "인바운드 DB 확보", url: "https://www.youtube-nocookie.com/embed/d7Qp4u0GOqQ?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1" },
         { id: "tmScript", title: "방문상담 TM 및 프리랜서 안내", url: "https://www.youtube-nocookie.com/embed/irKvva8QQfs?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1" },
         { id: "consulting1", title: "기업 컨설팅 예시 (공장1)", url: "https://www.youtube-nocookie.com/embed/ENp3-x0U-Gg?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1" },
         { id: "consulting2", title: "기업 컨설팅 예시 (공장2)", url: "https://www.youtube-nocookie.com/embed/w9hilORl76k?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1" },
@@ -172,7 +172,7 @@ function Home() {
                     
 <div className="max-w-2xl w-full space-y-6">
 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "30px",marginBottom:"30px" }}>
-  <h2 className="text-white" style={{ fontSize: "25px", margin: 0 }}>🎬 전화 스크립트 (4종)</h2>
+  <h2 className="text-white" style={{ fontSize: "25px", margin: 0 }}>🎬 업무 예시 (4종)</h2>
   <a
     href="../TM 스크립트 녹음 파일.zip" // 실제 파일 경로로 변경 필요
     download
