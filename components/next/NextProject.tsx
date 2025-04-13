@@ -89,7 +89,7 @@ function NextProject({height, number, attrContent, heroContent, className}) {
                     <div className="project-number p-absolute d-flex">
                         <h6>Project</h6>
                         <span className="current">{number}</span>
-                        <span className="full">6</span>
+                        <span className="full">3</span>
                     </div>
                     {category && <MetaPost className="mt-30 right-0 p-absolute top-0 dsn-container" category={category} />}
 

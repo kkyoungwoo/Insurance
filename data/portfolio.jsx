@@ -7,8 +7,8 @@ const data = [
         slug: 'free_headhunting',
         src: '/img/work/free_headhunting_main.jpg',
 
-        category: ['보험 DB (기업 영업)'],
-        description: '외국인 합법 채용 컨설팅 무료 지원',
+        category: ['기업 무료 서비스'],
+        description: '외국인 합법 고용 컨설팅 보고서 제공',
         overlay: 4
     },
     {
@@ -17,18 +17,18 @@ const data = [
         slug: 'paid_headhunting',
         src: '/img/work/paid_headhunting_main.jpg',
 
-        category: ['유료 서비스'],
-        description: '합법 취업이 가능한 근로희망 외국인 이력서를 제공',
+        category: ['기업 무료 서비스'],
+        description: '합법 취업이 가능한 외국인 이력서 제공',
         overlay: 5
     },
     {
         id: 3,
-        title: "외국인 이력서 무료 열람",
+        title: "외국인 취업 허가",
         slug: 'remote_work',
-        src: '/img/work/remote_work_main.jpg',
+        src: '/img/work/remote_work.jpg',
 
-        category: ['무료 서비스'],
-        description: '외국인 근로자가 필요한 기업에 외국인 인재풀의 열람권을 안내',
+        category: ['기업 무료 서비스'],
+        description: '취업비자 발급 가이드북 무료 제공',
         overlay: 3
     },
     /*{

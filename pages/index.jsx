@@ -25,17 +25,35 @@ function Home() {
 
     const [selectedVideo, setSelectedVideo] = useState("newVideo");
     
+
     const videos = [
-        { id: "newVideo", title: "인바운드 DB 확보", url: "https://www.youtube-nocookie.com/embed/d7Qp4u0GOqQ?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1" },
-        { id: "tmScript", title: "방문상담 TM 및 프리랜서 안내", url: "https://www.youtube-nocookie.com/embed/irKvva8QQfs?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1" },
-        { id: "consulting1", title: "기업 컨설팅 예시 (공장1)", url: "https://www.youtube-nocookie.com/embed/ENp3-x0U-Gg?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1" },
-        { id: "consulting2", title: "기업 컨설팅 예시 (공장2)", url: "https://www.youtube-nocookie.com/embed/w9hilORl76k?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1" },
+        {
+            id: "newVideo",
+            title: "기업 TM 샘플",
+            url: "https://www.youtube-nocookie.com/embed/s3Vmehabd7c?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
+        },
+        {
+            id: "tmScript",
+            title: "기업DB 확보 TM 스크립트",
+            url: "https://www.youtube-nocookie.com/embed/4a6HSYoL9Pw?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
+        },
+        {
+            id: "consulting1",
+            title: "프리랜서 TM 스크립트 (기본)",
+            url: "https://www.youtube-nocookie.com/embed/MWZcE-0u74k?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
+        },
+        {
+            id: "consulting2",
+            title: "프리랜서 TM 스크립트 (심화)",
+            url: "https://www.youtube-nocookie.com/embed/_4Q7ToLbM8E?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
+        }
     ];
+    
     
     return (
         <Layout modelRight={{ children: <ModalContact />, propsModal: { textBtn: "Contact" } }}>
             <Head>
-                <title>보험DB 기업DB 자체 생산 | 판매</title>
+                <title>보험DB 기업DB 자체 생산 | 보험영업디비 판매</title>
             </Head>
             {/* eslint-disable react/no-unescaped-entities */}
             <SliderPortfolio
@@ -57,7 +75,7 @@ function Home() {
             <div className="container section-margin" data-dsn-title="problem solver">
                 <TitleSection
                     className="align-items-center text-center"
-                    description={"워크비자 DB는"}
+                    description={"DB영업 과정"}
                 >
                     대화에 주도권이 있습니다<br />
                 </TitleSection>
@@ -74,26 +92,17 @@ function Home() {
                         description={"워크비자 DB는"}
                         defaultSpace={false}
                     >
-                        기업 영업이 참 쉽습니다
+                        영업이 당당합니다
                     </TitleSection>
 
                     <p className="mb-10">
-                        1. 기업 인사 담당자와 방문 약속을 잡습니다
+                        1. 기업에게 무료 컨설팅 제공
                     </p>
                     <p className="mb-10">
-                        2. "구인요청서"를 받습니다
-                    </p>
-                    <p>
-                        3. 전달받은 기업의 서류를 워크비자 이메일로 전송합니다
+                        2. 필요시 이력서 무료 전달
                     </p>
                     <p className="mb-20">
-                        email : workvisahr@naver.com
-                    </p>
-                    <p className="mb-20">
-                        대표들을 만나고 영업에 집중하세요,
-                    </p>
-                    <p className="mb-20">
-                        외국인 고용은 저희가 해결하겠습니다
+                        3. 100% 합법적인 절차로 진행 
                     </p>
 
                     <div
@@ -106,7 +115,7 @@ function Home() {
     }}
 >
     <Button
-        href="../영업 가이드북.pdf"
+        href="../보험사 영업 교육 자료.pdf"
         style={{
             padding: "10px 20px",
             fontSize: "16px",
@@ -123,7 +132,7 @@ function Home() {
         target="_blank"
         rel="noopener noreferrer"
     >
-        기업 영업 가이드북 다운로드
+        영업 교육 자료 다운로드
     </Button>
     <Button
         href="../구인요청서.hwp"
@@ -172,7 +181,7 @@ function Home() {
                     
 <div className="max-w-2xl w-full space-y-6">
 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "30px",marginBottom:"30px" }}>
-  <h2 className="text-white" style={{ fontSize: "25px", margin: 0 }}>🎬 업무 예시 (4종)</h2>
+  <h2 className="text-white" style={{ fontSize: "25px", margin: 0 }}>🎬 참고</h2>
   <a
     href="../TM 스크립트 녹음 파일.zip" // 실제 파일 경로로 변경 필요
     download

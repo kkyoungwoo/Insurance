@@ -45,11 +45,8 @@ function Project3(params) {
               업무절차는 아래와 같습니다
             </p>
             <div className="intro-project-cat mt-30">
-              <span className="cat-item">회사 미팅</span>
-              <span className="cat-item">회사 구인요청서, 사업자등록증 확보</span>
-              <span className="cat-item">
-                워크비자에 구인요청서, 사업자등록증 서류 전달
-              </span>
+              <span className="cat-item">외국인 합법 고용 컨설팅 진행</span>
+              <span className="cat-item">외국인 고용 희망 이메일 회신</span>
               <span className="cat-item">워크비자 본사에서 비자 컨설팅 및 외국인 이력서 전달</span>
             </div>
           </div>
@@ -64,7 +61,7 @@ function Project3(params) {
             상세히 알고 싶으신가요?
           </TitleSection>
           <p className="mt-15">
-            영업 프로세스는 오프라인 교육을 통해 안내됩니다
+            상세한 내용을 상담을 통해 안내됩니다
           </p>
         </div>
       </div>
@@ -73,7 +70,7 @@ function Project3(params) {
       <section className="container section-margin text-center">
         <div className="p-relative">
           <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-            인구감소 지역 또는 고용허가서가 있는 기업에 맞춤형 이력서 전달 영업
+            250여가지 비자를 고려한 기업에 맞춤형 이력서 전달 영업
           </h4>
         </div>
       </section>
@@ -84,12 +81,11 @@ function Project3(params) {
         <ParallaxImage src="/img/work/paid_headhunting.jpg" overlay={2} alt="" />
         <MoveBox>
           <TitleSection className="align-items-start mb-30" defaultSpace={false}>
-            외국인 이력서 확보 가능
+            외국인 이력서 무료열람 가능
           </TitleSection>
           <p className="mb-10">
-            사업장은 합법 외국인 이력서 확보 비용 발생
+            워크비자 채용 플랫폼에서 월 최대 30건 이력서 무료열람 가능
           </p>
-          <p className="mb-10">최소 구매수량 5개 / 건당 150,000원</p>
         </MoveBox>
       </div>
       {/* End Box Info Move Content */}

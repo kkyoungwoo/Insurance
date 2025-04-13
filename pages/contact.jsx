@@ -27,20 +27,13 @@ function About() {
                     <span className="pl-10 pr-10 background-section">WORK VISA COMPANY</span>
                 </p>
                 <h1 className="title text-uppercase">
-                    기업 영업 바로 시작하세요
+                    영업을 시작하세요
                 </h1>
                 <p className="dsn-heading-title mt-15 max-w570">지금 이 시간에도 기업은 외국인을 채용을 희망하고 있습니다
                 </p>
             </HeaderNormal>
             {/*========== End Header Normal ==========*/}
-            {/*Start Map*/}
-            <Map
-                mapKey="AIzaSyDMyAS2jdzj-vdgBIFaIStYOWJtSlghndg"
-                zoom={10}
-                height="30vh"
-                defaultCenter={{lat: 35.874233, lng: 128.624291}}
-            />
-
+            
             {/*Start Contact Form && Info Box*/}
             <div className="section-margin container">
                 <DsnGrid col={2} colTablet={1}>

@@ -9,14 +9,14 @@ import FadeUpTrigger from "../../animation/FadeUpTrigger";
 
 const HeroContent = {
     title: "기업이 당신을 기다리고 있습니다",
-    subtitle: `블루오션, 외국인 합법 고용 기업DB `,
-    description: `1. 저출산 문제로 중소기업에 인력난 발생<span class="mb-10 d-block" ></span>
-    2. 외국인 합법 채용으로 중소기업에 인력난 해결<span class="mb-10 d-block" ></span>
-    3. 자유로운 추가 영업 진행<span class="mb-10 d-block" ></span>`,
-    authorTitle: "DB 구매 정보 (*조기 마감될 수 있습니다)",
-    authorJob: "주문 즉시 생산 , 월 최대 300개 생산",
-    experienceNumber: "WORKVISA의",
-    experienceDescription: `매력적인 인프라`,
+    subtitle: `건강하게 당당하고 영업하세요`,
+    description: `1. 저출산 문제로 기업에 인력난 발생중<span class="mb-10 d-block" ></span>
+    2. 외국인 합법 채용이 가능한지 확인 도움<span class="mb-10 d-block" ></span>
+    3. 대화 과정에서 보험 안내 진행<span class="mb-10 d-block" ></span>`,
+    authorTitle: "DB 구매 정보",
+    authorJob: ": 외국인 고용 컨설팅 DB",
+    experienceNumber: "WORKVISA",
+    experienceDescription: `외국인 고용 DB`,
     heroImage: '/img/about-intro.jpg',
     awards: [
         {number: 1, description: `건 구매`},

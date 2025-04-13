@@ -15,7 +15,7 @@ import Button from "../../components/button/Button";
 
 function Project3(params) {
   // "remote_work" 데이터가 없으면 빈 객체를 사용
-  const heroData = getPortfolioItem("free_headhunting") || {};
+  const heroData = getPortfolioItem("remote_work") || {};
   // "consulting" 데이터가 없으면 기본 URL(slug)을 가진 객체를 사용하여 NextProject 오류 방지
   const free_headhunting = getPortfolioItem("free_headhunting") || { slug: "/" };
 
@@ -35,13 +35,7 @@ function Project3(params) {
             <h4 className="title-block text-uppercase mb-20">info</h4>
             <ul className="intro-project-list">
               <li className="p-relative">
-                <strong>업무</strong> 인재풀 열람권 안내
-              </li>
-              <li className="p-relative">
-                <strong>수수료</strong> - 원
-              </li>
-              <li className="p-relative">
-                <strong>급여일</strong> - 일
+                <strong>업무</strong> 본사에서 기업에 외국인 합법 고용을 지원
               </li>
             </ul>
           </div>
@@ -51,9 +45,9 @@ function Project3(params) {
               업무절차는 아래와 같습니다
             </p>
             <div className="intro-project-cat mt-30">
-              <span className="cat-item">회사 미팅</span>
-              <span className="cat-item">인재풀 무료 열람 안내</span>
-              <span className="cat-item">인재풀 열람권 결제 유도</span>
+              <span className="cat-item">워크비자 본사에서 비자 컨설팅 및 외국인 이력서 전달</span>
+              <span className="cat-item">외국인 고용 요청</span>
+              <span className="cat-item">본사에서 비자 상담 및 가이드북 제공</span>
             </div>
           </div>
         </DsnGrid>
@@ -67,7 +61,7 @@ function Project3(params) {
             상세히 알고 싶으신가요?
           </TitleSection>
           <p className="mt-15">
-            영업 프로세스는 오프라인 교육을 통해 안내됩니다
+          상세한 내용을 상담을 통해 안내됩니다
           </p>
           {/*<Button href="https://naver.com" className="mt-30">
               View More <span className="icon">⟶</span>
@@ -79,7 +73,7 @@ function Project3(params) {
       <section className="container section-margin text-center">
         <div className="p-relative">
           <h4 className="title-block dsn-text max-w570 ml-auto mr-auto mb-70 sm-mb-30">
-            기업에 외국인 인재풀의 열람권을 안내하는 업무
+            기업에 외국인 합법 고용을 지원
           </h4>
         </div>
       </section>
@@ -90,13 +84,13 @@ function Project3(params) {
         <ParallaxImage src="/img/work/remote_work.jpg" overlay={2} alt="" />
         <MoveBox>
           <TitleSection className="align-items-start mb-30" defaultSpace={false}>
-            별도의 수익은 없습니다
+            기업이 스스로 외국인 고용을 진행할 수 있도록 돕습니다
           </TitleSection>
           <p className="mb-10">
-            아르바이트 또는 단순인력 외국인 고용 가능
+            외국인 합법고용을 직접 할 수 있게 됨
           </p>
           <p className="mb-10">
-            외국인 이력서 하루 1건 무료 열람 가능 (월30건)
+            1인당 평균 200만원의 행정비용을 절약
           </p>
         </MoveBox>
       </div>

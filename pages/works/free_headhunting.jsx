@@ -46,7 +46,7 @@ function Project3(params) {
               <span className="cat-item">회사 미팅</span>
               <span className="cat-item">회사 구인요청서 확보</span>
               <span className="cat-item">
-                워크비자에 구인요청서 서류 전달
+                워크비자에 구인요청서 이메일로 서류 전달
               </span>
             </div>
           </div>
@@ -64,9 +64,8 @@ function Project3(params) {
   <div className="intro-project-section mb-30">
     <h5 className="">경쟁사 비교</h5>
     <p className="intro-project-description">
-      경쟁사는 <strong>Kowork</strong>, <strong>Kwork</strong>, <strong>114114</strong> 등이 있습니다.
-      114114는 인력사무소 담당자들이 활동하며, Kowork는 전문 인력만 가능합니다.<br />
-      하지만 <strong>워크비자는 단순 인력 매칭도 가능</strong>하여 보다 폭넓은 채용이 가능합니다.
+      경쟁사는 <strong>Klik</strong>, <strong>Komate</strong>, <strong>114114</strong> 등이 있습니다.
+      <strong>워크비자는 단순 인력 매칭도 가능</strong>하여 보다 폭넓은 채용이 가능합니다.
     </p>
   </div>
 
@@ -75,7 +74,7 @@ function Project3(params) {
     <p className="intro-project-description">
       기업 방문을 통해 회사의 업종, 업태, 담당 업무, 한국인 인원수 등에 따라 외국인 채용 가능 여부를 
       정확히 확인할 수 있습니다.<br />
-      고용 요청서를 작성하면 <strong>전문 상담사가 무료로 채용 가능 여부를 검토</strong>해 드립니다.
+      고용 요청서를 작성하면 <strong>전문 상담사가 무료로 채용 가능 여부를 검토</strong>하고 외국인 고용을 도와드립니다.
     </p>
   </div>
 
@@ -97,28 +96,6 @@ function Project3(params) {
   </div>
 </div>
 
-          <div className="intro-project-right">
-            <h4 className="title-block text-uppercase mb-20">TM 생산 스크립트</h4>
-            <p className="intro-project-description">
-              안녕하세요 OOO(상호) 대표님 맞으시죠?<br />
-              외국인 고용 관련해서 안내드리기 위해 연락드렸습니다.<br />
-              잠깐 통화 가능하실까요?<br />
-              <br />
-              저는 “워크 비자” ㅇㅇㅇ 컨설턴트입니다. 저희 회사는 외국인을 합법으로 채용할 수 있는 무료 서비스를 제공해 드리고 있고 
-              아웃소싱 및 헤드헌팅이 아닌 직업 정보제공업이 등록되어있는 합법 업체입니다.<br />
-              <br />
-              대표님께서도 알고 있으실 텐데, 합법적으로 외국인을 채용하려면 회사의 업종/업태/담당업무/한국인 인원수 등에 따라 
-              외국인 채용 가능 여부가 달라지기 때문에 전화로는 상담이 어렵습니다. <br />
-              만나 뵙고 설명드리는 것이 대표님께 더 도움이 될 것 같아요.<br />
-              <br />
-              해당 지역의 외국인 고용 전문 상담사가 방문하여 상담이 가능하도록 도와드리겠습니다.<br />
-              전문 상담사가 이 번호로 연락드리면 될까요?<br />
-              <br />
-              네, 감사합니다. 그럼 대표님 회사로 방문드릴 텐데, 방문 주소 부탁드립니다.<br />
-              <br />
-              행복한 하루 보내세요! 😊
-            </p>
-          </div>
         </DsnGrid>
       </section>
       {/* End Intro Project */}
@@ -130,7 +107,7 @@ function Project3(params) {
             상세히 알고 싶으신가요?
           </TitleSection>
           <p className="mt-15">
-            영업 프로세스는 오프라인 교육을 통해 안내됩니다
+          상세한 내용을 상담을 통해 안내됩니다
           </p>
           {/* <Button href="https://naver.com" className="mt-30">
               View More <span className="icon">⟶</span>
@@ -153,10 +130,10 @@ function Project3(params) {
         <ParallaxImage src="/img/work/free_headhunting.jpg" overlay={2} alt="" />
         <MoveBox>
           <TitleSection className="align-items-start mb-30" defaultSpace={false}>
-            워크비자에서 진행하는 업무
+            DB이용시 업무 요약
           </TitleSection>
-          <p className="mb-10">1. 외국인 합법취업 가능성 확인하기</p>
-          <p className="mb-10">2. 외국인 이력서를 기업에 전달하기</p>
+          <p className="mb-10">1. 외국인 합법취업 가능성 확인안내 미팅</p>
+          <p className="mb-10">2. 구인요청서를 워크비자 이메일로 전달</p>
           <p className="mb-10">email : workvisahr@naver.com</p>
         </MoveBox>
       </div>
