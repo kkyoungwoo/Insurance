@@ -135,7 +135,7 @@ const Dbadd = () => {
         color: "white",
         boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
         borderRadius: "8px",
-        textAlign: "center"
+        textAlign: "left"
       }}
     >
       <h2
@@ -145,22 +145,22 @@ const Dbadd = () => {
           marginBottom: "16px"
         }}
       >
-        엑셀 파일 여러개를 하나로 병합
+        1차 작업) 엑셀 파일 병합 및 중복 제거
       </h2>
-      <div
+      <h6>(회사명, 전화번호, 주소 3단계 제거 필요)</h6><br/>
+      <p style={{ marginBottom: "16px" }}>(중복 1개만 남기고 최종 출력됩니다)</p>      <div
         style={{
           fontSize: "1rem",
           fontWeight: "bold",
           marginBottom: "16px"
         }}
       >
-        (같은 형태의 엑셀을 등록하세요)
       </div>
       <div
         style={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
+          alignItems: "flex-start",
           gap: "16px"
         }}
       >
@@ -255,8 +255,8 @@ const Dbadd = () => {
       <div
         style={{
           display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
+          justifyContent: "flex-start",
+          alignItems: "flex-start",
           marginTop: "16px",
           gap: "16px"
         }}
@@ -268,7 +268,7 @@ const Dbadd = () => {
             border: "none",
             cursor: files.length === 0 ? "not-allowed" : "pointer",
             backgroundColor: files.length === 0 ? "#4a5568" : "#38a169",
-            color: "white"
+            color: "white",
           }}
           onClick={handleMerge}
           disabled={files.length === 0}

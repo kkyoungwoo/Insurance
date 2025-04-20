@@ -4,6 +4,7 @@ import Head from "next/head";
 import HeaderNormal from "../components/header/HeaderNormal";
 import Layout from "../layout/Layout";
 import Dbadd from "./dbadd";
+import Dbcut from "./dbcut";
 import Autocall from "./autocall";
 
 export const PopulationDeclineArea = [
@@ -313,8 +314,8 @@ const processData = async () => {
         </p>
         <h3 className="text-uppercase">DB CALL SYSTEM</h3>
       </HeaderNormal>
-      <Autocall/>
       <Dbadd/>
+      <Dbcut/>
       <div className="container">
         {/* 파일 업로드 섹션 */}
         <div className="upload-section">
@@ -326,7 +327,7 @@ const processData = async () => {
             style={{ display: "none" }}
           />
           <button className="button" onClick={() => fileInputRef.current.click()}>
-            최종 DB 제작, 엑셀 업로드
+            사용안함 인구감소지역 추가 최종 DB 제작(주소 필터 필요)/엑셀 업로드
           </button>
         </div>
 
