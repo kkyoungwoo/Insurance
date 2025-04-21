@@ -5,6 +5,7 @@ import HeaderNormal from "../components/header/HeaderNormal";
 import Layout from "../layout/Layout";
 import Dbadd from "./dbadd";
 import Dbcut from "./dbcut";
+import Dbpost from "./dbpost";
 import Autocall from "./autocall";
 
 export const PopulationDeclineArea = [
@@ -316,6 +317,7 @@ const processData = async () => {
       </HeaderNormal>
       <Dbadd/>
       <Dbcut/>
+      <Dbpost/>
       <div className="container">
         {/* 파일 업로드 섹션 */}
         <div className="upload-section">

@@ -104,7 +104,7 @@ const Dbadd = () => {
     // 현재 날짜 (YYYY.MM.DD 형식)
     const today = new Date();
     const formattedDate = today.toISOString().split("T")[0].replace(/-/g, ".");
-    const fileName = `${formattedDate} 엑셀 병합파일.xlsx`;
+    const fileName = `${formattedDate}_1차 작업.xlsx`;
 
     // 엑셀 데이터 생성 (헤더 + 병합 후 데이터)
     const ws = XLSX.utils.aoa_to_sheet([headers, ...mergedData]);
@@ -145,10 +145,11 @@ const Dbadd = () => {
           marginBottom: "16px"
         }}
       >
-        1차 작업) 엑셀 파일 병합 및 중복 제거
+        1차 작업) 원천 엑셀 파일 병합 및 중복 제거
       </h2>
-      <h6>(회사명, 전화번호, 주소 3단계 제거 필요)</h6><br/>
-      <p style={{ marginBottom: "16px" }}>(중복 1개만 남기고 최종 출력됩니다)</p>      <div
+      <h6>(회사명, 연락처, 주소 3번 작업 필요)</h6><br/>
+      <p style={{ marginBottom: "16px" }}>(중복 1개만 남기고 최종 출력됩니다)</p><br/>
+      <div
         style={{
           fontSize: "1rem",
           fontWeight: "bold",
