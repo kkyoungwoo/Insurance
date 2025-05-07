@@ -6,7 +6,7 @@ import Layout from "../layout/Layout";
 import Dbadd from "./dbadd";
 import Dbcut from "./dbcut";
 import Dbpost from "./dbpost";
-import Autocall from "./autocall";
+import Numberdb from "./numberdb";
 
 export const PopulationDeclineArea = [
   '부산 동구',
@@ -318,6 +318,7 @@ const processData = async () => {
       <Dbadd/>
       <Dbcut/>
       <Dbpost/>
+      <Numberdb/>
       <div className="container">
         {/* 파일 업로드 섹션 */}
         <div className="upload-section">
