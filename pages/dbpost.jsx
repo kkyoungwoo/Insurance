@@ -117,7 +117,7 @@ const Dbcut = () => {
       <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", marginBottom: "16px" }}>
         3차 작업) 기존 전체파일과 2차작업 파일 비교 후 남은 파일만 정리
       </h2><br/>
-      <p style={{ marginBottom: "16px" }}>(열 A(연락처)와 열 B(근무지기본주소)를 중복제거 설정)</p><br/>
+      <p style={{ marginBottom: "16px" }}>파일을 2개 등록하세요. (열 A(연락처)와 열 B(근무지기본주소)를 중복제거 설정)</p><br/>
 
       <input
         type="file"

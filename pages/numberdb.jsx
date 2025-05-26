@@ -98,7 +98,7 @@ export default function NumberDBPage() {
         borderRadius: '8px',
       }}
     >
-      <h1 style={{ textAlign: 'center', marginBottom: '16px' }}>
+      <h1 style={{ textAlign: 'center', marginBottom: '16px', color: "black" }}>
         📞 전화번호 분류기
       </h1>
 
