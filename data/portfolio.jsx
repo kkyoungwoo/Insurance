@@ -3,17 +3,17 @@
 const data = [   
     {
         id: 1,
-        title: "외국인 고용 DB",
+        title: "업무1. 외국인 고용 안내하기",
         slug: 'free_headhunting',
         src: '/img/work/free_headhunting_main.jpg',
 
         category: ['기업 무료 서비스'],
-        description: '외국인 합법 고용 컨설팅 보고서 제공',
+        description: '외국인 합법 고용 안내 영업 시작',
         overlay: 4
     },
     {
         id: 2,
-        title: "맞춤형 이력서 전달",
+        title: "업무2. 이력서 전달 및 소통",
         slug: 'paid_headhunting',
         src: '/img/work/paid_headhunting_main.jpg',
 
@@ -23,12 +23,12 @@ const data = [
     },
     {
         id: 3,
-        title: "외국인 취업 허가",
+        title: "업무3. 이력서 및 기업정보 전달",
         slug: 'remote_work',
         src: '/img/work/remote_work.jpg',
 
         category: ['기업 무료 서비스'],
-        description: '취업비자 발급 가이드북 무료 제공',
+        description: '행정사 업무 진행 및 비자 발급',
         overlay: 3
     },
     /*{

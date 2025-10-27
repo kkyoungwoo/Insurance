@@ -23,6 +23,7 @@ function Copyright({ className, ...restProps }) {
       </h5>
       <h5 className="copyright-info">사업자등록번호 : 673-87-02961</h5>
       <h5 className="copyright-info">대표 : 고경우</h5>
+      <h5 className="copyright-info">전화번호 : 010-4242-3088</h5>
       <h5 className="copyright-info email" onClick={copyEmail}>
         E-mail : workvisa@naver.com
       </h5>

@@ -11,10 +11,10 @@ const HeroContent = {
     title: "기업이 당신을 기다리고 있습니다",
     subtitle: `건강하게 당당하고 영업하세요`,
     description: `1. 저출산 문제로 기업에 인력난 발생중<span class="mb-10 d-block" ></span>
-    2. 외국인 합법 채용이 가능한지 확인 도움<span class="mb-10 d-block" ></span>
-    3. 대화 과정에서 보험 안내 진행<span class="mb-10 d-block" ></span>`,
-    authorTitle: "DB 구매 정보",
-    authorJob: ": 외국인 고용 컨설팅 DB",
+    2. 외국인 합법 채용이 가능한지 확인 및 채용 도움<span class="mb-10 d-block" ></span>
+    3. 대화 과정에서 추가 영업 진행<span class="mb-10 d-block" ></span>`,
+    authorTitle: "",
+    authorJob: "",
     experienceNumber: "WORKVISA",
     experienceDescription: `외국인 고용 DB`,
     heroImage: '/img/about-intro.jpg',
@@ -43,7 +43,7 @@ function HeroSection({className, ...restProps}) {
                             <h5 className="sm-title-block line-shape line-shape-after mb-10" ref={ref}>{HeroContent.authorTitle}</h5>
                             <span className="sub-heading line-bg-left" style={{color: "#FFFF99",fontWeight:"bold"}} ref={ref}>{HeroContent.authorJob}</span>
                             <DsnGrid className="box-awards pt-30" col={2} colTablet={2} colGap={15} rowGap={15}>
-                                {HeroContent.awards.map(
+                                {/*HeroContent.awards.map(
                                     (item, index) =>
                                         <div className="box-awards_item has-border " key={index}
                                              ref={ref}>
@@ -54,7 +54,7 @@ function HeroSection({className, ...restProps}) {
                                             </div>
 
                                         </div>
-                                )}
+                                )*/}
 
 
                             </DsnGrid>

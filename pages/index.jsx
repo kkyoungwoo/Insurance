@@ -33,16 +33,6 @@ function Home() {
             url: "https://www.youtube-nocookie.com/embed/s3Vmehabd7c?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
         },
         {
-            id: "tmScript",
-            title: "기업DB 확보 TM 스크립트",
-            url: "https://www.youtube-nocookie.com/embed/4a6HSYoL9Pw?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
-        },
-        {
-            id: "consulting1",
-            title: "프리랜서 TM 스크립트 (기본)",
-            url: "https://www.youtube-nocookie.com/embed/MWZcE-0u74k?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
-        },
-        {
             id: "consulting2",
             title: "프리랜서 TM 스크립트 (심화)",
             url: "https://www.youtube-nocookie.com/embed/_4Q7ToLbM8E?rel=0&modestbranding=1&autoplay=0&showinfo=0&controls=1"
@@ -53,7 +43,7 @@ function Home() {
     return (
         <Layout modelRight={{ children: <ModalContact />, propsModal: { textBtn: "Contact" } }}>
             <Head>
-                <title>보험DB 기업DB 자체 생산 | 보험영업디비 판매</title>
+                <title>보험DB 기업DB 자체 생산 | 법인영업디비 판매</title>
             </Head>
             {/* eslint-disable react/no-unescaped-entities */}
             <SliderPortfolio
@@ -70,7 +60,6 @@ function Home() {
                 className="container section-margin container fill-right-container"
                 data-dsn-title="How We Are"
             />
-
             {/* Start Service */}
             <div className="container section-margin" data-dsn-title="problem solver">
                 <TitleSection
@@ -115,48 +104,7 @@ function Home() {
     }}
 >
     <Button
-        href="../보험사 영업 교육 자료.pdf"
-        style={{
-            padding: "10px 20px",
-            fontSize: "16px",
-            backgroundColor: "#274893",
-            color: "white",
-            border: "none",
-            borderRadius: "5px",
-            cursor: "pointer",
-            textAlign: "center",
-            whiteSpace: "nowrap",
-            width: "100%", // 모바일에서 가득 차게
-            maxWidth: "300px", // 버튼 최대 크기 설정
-        }}
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        영업 교육 자료 다운로드
-    </Button>
-    <Button
-        href="../구인요청서.hwp"
-        style={{
-            padding: "10px 20px",
-            fontSize: "16px",
-            backgroundColor: "#4CAF50",
-            color: "white",
-            border: "none",
-            borderRadius: "5px",
-            cursor: "pointer",
-            textAlign: "center",
-            whiteSpace: "nowrap",
-            width: "100%", // 모바일에서 가득 차게
-            maxWidth: "300px", // 버튼 최대 크기 설정
-        }}
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        구인요청서 HWP 다운로드
-    </Button>
-
-    <Button
-        href="../구인요청서.pdf"
+        href="../구인요청서.zip"
         style={{
             padding: "10px 20px",
             fontSize: "16px",
@@ -173,7 +121,7 @@ function Home() {
         target="_blank"
         rel="noopener noreferrer"
     >
-        구인요청서 PDF 다운로드
+        구인요청서 다운로드
     </Button>
 </div>
 
@@ -183,7 +131,7 @@ function Home() {
 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: "30px",marginBottom:"30px" }}>
   <h2 className="text-white" style={{ fontSize: "25px", margin: 0 }}>🎬 참고</h2>
   <a
-    href="../TM 스크립트 녹음 파일.zip" // 실제 파일 경로로 변경 필요
+    href="../워크비자 TM 샘플파일.zip" // 실제 파일 경로로 변경 필요
     download
     style={{
       padding: "10px 20px",
@@ -260,33 +208,6 @@ function Home() {
             {/* End Box Info Move Content */}
 
             {/* Start Portfolio */}
-            <div className="section-margin" data-dsn-title="commission List">
-                <TitleSection
-                    className="container align-items-center text-center"
-                    description={"commission List"}
-                >
-                    영업 아이템 설명<br />
-                </TitleSection>
-                <PortfolioSwiper
-                    grabCursor
-                    desktop={{ spaceBetween: 50, slidesPerView: 1.5 }}
-                    tablet={{ spaceBetween: 0, slidesPerView: 1.3 }}
-                    mobile={{ slidesPerView: 1 }}
-                    stylePortfolio="work-section"
-                    className="text-left v-dark-head title-inherit h4"
-                    centeredSlides
-                    loop
-                    blur
-                    parallax
-                    speed={1200}
-                    watchSlidesProgress
-                    loopedSlides={2}
-                    parallaxImage={{ "data-swiper-parallax-scale": "0.85" }}
-                    parallaxContent={{ "data-swiper-parallax-opacity": "0" }}
-                >
-                    <SwiperPagination className="justify-content-between dsn-container mt-30" />
-                </PortfolioSwiper>
-            </div>
             {/* End Portfolio */}
 
             {/* Start Testimonial Section */}
